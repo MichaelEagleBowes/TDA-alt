@@ -16,11 +16,11 @@ import java.util.List;
 
 public class TestRun {
 
-	private final String ID;
-	private final LocalDateTime CREATION_DATE;
-	private final Outcome OUTCOME;
-	private final List<TestedClass> CLASS_LIST;
-	private final TestOutcomeCounter COUNTER;
+	private final String id;
+	private final LocalDateTime creationDate;
+	private final Outcome outcome;
+	private final List<TestedClass> classList;
+	private final TestOutcomeCounter counter;
 
 	/**
 	 * Creates a new {@code TestRun}.
@@ -54,11 +54,11 @@ public class TestRun {
 			int executedTests, int passedTests, int failedTests) throws TdaDataModelException {
 		super();
 		Validator.validateTestRun(id, creationDate, outcome, classList);
-		ID = id;
-		CREATION_DATE = stringToDate(creationDate);
-		OUTCOME = outcome;
-		CLASS_LIST = classList;
-		COUNTER = new TestOutcomeCounter(totalTests, executedTests, passedTests, failedTests);
+		this.id = id;
+		this.creationDate = stringToDate(creationDate);
+		this.outcome = outcome;
+		this.classList = classList;
+		this.counter = new TestOutcomeCounter(totalTests, executedTests, passedTests, failedTests);
 	}
 
 	/**
@@ -89,7 +89,7 @@ public class TestRun {
 	 * @return the {@code TestRun}'s ID.
 	 */
 	public String getId() {
-		return ID;
+		return id;
 	}
 
 	/**
@@ -98,7 +98,7 @@ public class TestRun {
 	 * @return the {@code TestRun}'s creation date.
 	 */
 	public LocalDateTime getCreationDate() {
-		return CREATION_DATE;
+		return creationDate;
 	}
 
 	/**
@@ -108,7 +108,7 @@ public class TestRun {
 	 *         {@code false}.
 	 */
 	public Outcome getOutcome() {
-		return OUTCOME;
+		return outcome;
 	}
 
 	/**
@@ -117,7 +117,7 @@ public class TestRun {
 	 * @return the list of the {@code TestRun}'s {@link TestedClass}'.
 	 */
 	public List<TestedClass> getCLassList() {
-		return CLASS_LIST;
+		return classList;
 	}
 
 	/**
@@ -131,7 +131,7 @@ public class TestRun {
 	 *             if the class is not found.
 	 */
 	public TestedClass getTestedClass(String name) throws TdaDataModelException {
-		for (TestedClass testedClass : CLASS_LIST) {
+		for (TestedClass testedClass : classList) {
 			if (testedClass.getName().equals(name)) {
 				return testedClass;
 			}
@@ -146,6 +146,6 @@ public class TestRun {
 	 * @return the {@code TestRun}'s counter.
 	 */
 	public TestOutcomeCounter getCounter() {
-		return COUNTER;
+		return counter;
 	}
 }

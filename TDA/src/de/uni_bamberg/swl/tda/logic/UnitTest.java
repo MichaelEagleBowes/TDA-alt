@@ -9,9 +9,9 @@ package de.uni_bamberg.swl.tda.logic;
 
 public class UnitTest {
 
-	private final String ID;
-	private final String NAME;
-	private final Outcome OUTCOME;
+	private final String id;
+	private final String name;
+	private final Outcome outcome;
 
 	/**
 	 * Creates a new executed {@code UnitTest}.
@@ -28,9 +28,9 @@ public class UnitTest {
 	public UnitTest(String id, String name, Outcome outcome) throws TdaDataModelException {
 		super();
 		Validator.validateUnitTest(id, name);
-		this.ID = id;
-		this.NAME = name;
-		this.OUTCOME = outcome;
+		this.id = id;
+		this.name = name;
+		this.outcome = outcome;
 	}
 
 	/**
@@ -47,9 +47,9 @@ public class UnitTest {
 	public UnitTest(String id, String name) throws TdaDataModelException {
 		super();
 		Validator.validateUnitTest(id, name);
-		this.ID = id;
-		this.NAME = name;
-		this.OUTCOME = null;
+		this.id = id;
+		this.name = name;
+		this.outcome = null;
 	}
 
 	/**
@@ -58,7 +58,7 @@ public class UnitTest {
 	 * @return the {@code UnitTest}'s ID.
 	 */
 	public String getId() {
-		return ID;
+		return id;
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class UnitTest {
 	 * @return the {@code UnitTest}'s name.
 	 */
 	public String getName() {
-		return NAME;
+		return name;
 	}
 
 	/**
@@ -76,6 +76,6 @@ public class UnitTest {
 	 * @return the {@code UnitTest}'s {@link Outcome}.
 	 */
 	public Outcome getOutcome() {
-		return OUTCOME;
+		return outcome;
 	}
 }

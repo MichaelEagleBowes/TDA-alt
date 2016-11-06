@@ -9,10 +9,10 @@ package de.uni_bamberg.swl.tda.logic;
 
 public class TestOutcomeCounter {
 
-	private final int TOTAL_TESTS;
-	private final int EXECUTED_TESTS;
-	private final int PASSED_TESTS;
-	private final int FAILED_TESTS;
+	private final int totalTests;
+	private final int executedTests;
+	private final int passedTests;
+	private final int failedTests;
 
 	/**
 	 * Creates a new {@code TestOutcomeCounter}.
@@ -32,10 +32,10 @@ public class TestOutcomeCounter {
 			throws TdaDataModelException {
 		super();
 		Validator.validateCounterNumbers(totalTests, executedTests, passedTests, failedTests);
-		this.TOTAL_TESTS = totalTests;
-		this.EXECUTED_TESTS = executedTests;
-		this.PASSED_TESTS = passedTests;
-		this.FAILED_TESTS = failedTests;
+		this.totalTests = totalTests;
+		this.executedTests = executedTests;
+		this.passedTests = passedTests;
+		this.failedTests = failedTests;
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class TestOutcomeCounter {
 	 * @return the total number of {@link UnitTest}s.
 	 */
 	public int getTotalTests() {
-		return TOTAL_TESTS;
+		return totalTests;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class TestOutcomeCounter {
 	 * @return the number of executed {@link UnitTest}s.
 	 */
 	public int getExecutedTests() {
-		return EXECUTED_TESTS;
+		return executedTests;
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class TestOutcomeCounter {
 	 * @return the number of passed {@link UnitTest}s.
 	 */
 	public int getPassedTests() {
-		return PASSED_TESTS;
+		return passedTests;
 	}
 
 	/**
@@ -71,6 +71,6 @@ public class TestOutcomeCounter {
 	 * @return the number of failed {@link UnitTest}s.
 	 */
 	public int getFailedTests() {
-		return FAILED_TESTS;
+		return failedTests;
 	}
 }
