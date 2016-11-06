@@ -11,9 +11,9 @@ import java.util.List;
 
 public class TestedClass {
 
-	private final String NAME;
-	private final List<UnitTest> TEST_LIST;
-	private final double FAILURE_PERCENTAGE;
+	private final String name;
+	private final List<UnitTest> testList;
+	private final double failurePercentage;
 
 	/**
 	 * Creates a new {@code TestedClass}.
@@ -29,9 +29,9 @@ public class TestedClass {
 	public TestedClass(String name, List<UnitTest> testList) throws TdaDataModelException {
 		super();
 		Validator.validateTestedClass(name, testList);
-		NAME = name;
-		TEST_LIST = testList;
-		FAILURE_PERCENTAGE = calcFailurePercentage();
+		this.name = name;
+		this.testList = testList;
+		this.failurePercentage = calcFailurePercentage();
 	}
 
 	/**
@@ -41,9 +41,9 @@ public class TestedClass {
 	 */
 	private double calcFailurePercentage() {
 		double failed = 0.0;
-		double total = TEST_LIST.size();
+		double total = testList.size();
 
-		for (UnitTest unitTest : TEST_LIST) {
+		for (UnitTest unitTest : testList) {
 			if (unitTest.getOutcome() == Outcome.FAILED) {
 				failed++;
 			}
@@ -58,7 +58,7 @@ public class TestedClass {
 	 * @return the {@code TestedClass}' name.
 	 */
 	public String getName() {
-		return NAME;
+		return name;
 	}
 
 	/**
@@ -67,7 +67,7 @@ public class TestedClass {
 	 * @return the {@code TestedClass}' list of {@link UnitTest}s.
 	 */
 	public List<UnitTest> getTestList() {
-		return TEST_LIST;
+		return testList;
 	}
 
 	/**
@@ -77,6 +77,6 @@ public class TestedClass {
 	 *         decimal places.
 	 */
 	public double getFailurePercentage() {
-		return FAILURE_PERCENTAGE;
+		return failurePercentage;
 	}
 }
