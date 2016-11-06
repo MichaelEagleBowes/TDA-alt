@@ -1,0 +1,73 @@
+package de.uni_bamberg.swl.tda.logic;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+/**
+ * Tests for the class {@link TestedClass}.
+ * 
+ * @author Nicolas Gross
+ *
+ */
+
+public class TestedClassTests {
+
+	private static TestedClass testedClass;
+	private static List<UnitTest> testList = new LinkedList<>();
+
+	@BeforeClass
+	public static void initializeTestClass() throws TdaDataModelException {
+		UnitTest unitTest1 = new UnitTest("1", "Eins", Outcome.PASSED);
+		UnitTest unitTest2 = new UnitTest("2", "Zwei", Outcome.PASSED);
+		UnitTest unitTest3 = new UnitTest("3", "Drei", Outcome.FAILED);
+		testList.add(unitTest1);
+		testList.add(unitTest2);
+		testList.add(unitTest3);
+	}
+
+	@Before
+	public void initializeTests() throws TdaDataModelException {
+		testedClass = new TestedClass("TestedClass", testList);
+	}
+
+	@Test
+	public void setsNameSuccessfully() {
+		assertEquals("TestedClass", testedClass.getName());
+	}
+
+	@Test
+	public void setsListSuccessfully() {
+		assertEquals(testList, testedClass.getTestList());
+	}
+
+	@Test
+	public void calculatesCorrectFailurePercentage() {
+		assertEquals(33.33, testedClass.getFailurePercentage(), 0.0);
+	}
+
+	@Test(expected = TdaDataModelException.class)
+	public void emptyNameIsNotAccepted() throws TdaDataModelException {
+		testedClass = new TestedClass("", testList);
+	}
+
+	@Test(expected = TdaDataModelException.class)
+	public void nullAsNameIsNotAccepted() throws TdaDataModelException {
+		testedClass = new TestedClass(null, testList);
+	}
+
+	@Test(expected = TdaDataModelException.class)
+	public void emptyTestListIsNotAccepted() throws TdaDataModelException {
+		testedClass = new TestedClass("abcd1234", new LinkedList<>());
+	}
+
+	@Test(expected = TdaDataModelException.class)
+	public void nullAsTestListIsNotAccepted() throws TdaDataModelException {
+		testedClass = new TestedClass("abcd1234", null);
+	}
+}

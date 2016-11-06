@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_oWPJgKRMEea9H8G0NEtFEQ" name="swl_tda">
+    <eAnnotations xmi:id="_oWb90KRMEea9H8G0NEtFEQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_oWb90aRMEea9H8G0NEtFEQ" source="codegen">
+        <details xmi:id="_oWb90qRMEea9H8G0NEtFEQ" key="codegenDirectory" value="/swl-tda/src"/>
+        <details xmi:id="_ogM90KRMEea9H8G0NEtFEQ" key="AssociatedSourceCode" value="/swl-tda/src/de/uni_bamberg/swl/tda/logic/Outcome.java;3102757580/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TdaDataModelException.java;1934098782/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestOutcomeCounter.java;2497320229/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRun.java;672788878/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestedClass.java;1286670711/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTest.java;545506667/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/Validator.java;64853424/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ocil0KRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil0aRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil0qRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil06RMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil1KRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil1aRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil1qRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil16RMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ocil2KRMEea9H8G0NEtFEQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ocJkQKRMEea9H8G0NEtFEQ" name="de">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ocJkQaRMEea9H8G0NEtFEQ" name="uni_bamberg">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ocJkQqRMEea9H8G0NEtFEQ" name="swl">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ocJkQ6RMEea9H8G0NEtFEQ" name="tda">
+            <packagedElement xmi:type="uml:Package" xmi:id="_ocKLUKRMEea9H8G0NEtFEQ" name="logic">
+              <packagedElement xmi:type="uml:Enumeration" xmi:id="_ocgwoKRMEea9H8G0NEtFEQ" name="Outcome">
+                <ownedLiteral xmi:id="_och-wKRMEea9H8G0NEtFEQ" name="PASSED"/>
+                <ownedLiteral xmi:id="_och-waRMEea9H8G0NEtFEQ" name="FAILED"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_och-wqRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+                <ownedComment xmi:id="_odoK8KRMEea9H8G0NEtFEQ">
+                  <body>An Exception for problems in the TDA's data model section.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <generalization xmi:id="_odXsQ6RMEea9H8G0NEtFEQ" general="_odV3EaRMEea9H8G0NEtFEQ"/>
+                <ownedAttribute xmi:id="_odeZ8KRMEea9H8G0NEtFEQ" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                  <defaultValue xmi:type="uml:LiteralString" xmi:id="_odeZ8aRMEea9H8G0NEtFEQ" value="6657067605074631600L"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odkgkKRMEea9H8G0NEtFEQ" name="TdaDataModelException" specification="_ocjM4KRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odkgkaRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odkgkqRMEea9H8G0NEtFEQ" name="TdaDataModelException" specification="_ocjz8KRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odkgk6RMEea9H8G0NEtFEQ" name="message">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odkglKRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super(message);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHoKRMEea9H8G0NEtFEQ" name="TdaDataModelException" specification="_odXFMKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHoaRMEea9H8G0NEtFEQ" name="cause" type="_odWeIKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odlHoqRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super(cause);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHo6RMEea9H8G0NEtFEQ" name="TdaDataModelException" specification="_odXFNaRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHpKRMEea9H8G0NEtFEQ" name="message">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlHpaRMEea9H8G0NEtFEQ" name="cause" type="_odWeIKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odlHpqRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super(message, cause);
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ocjM4KRMEea9H8G0NEtFEQ" name="TdaDataModelException" visibility="package" method="_odkgkKRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_ocjM4aRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_ocjM4qRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_ocjM46RMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocjz8KRMEea9H8G0NEtFEQ" name="TdaDataModelException" visibility="package" method="_odkgkqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_ocjz8qRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_ocjz86RMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_ocjz8aRMEea9H8G0NEtFEQ" name="message">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocjz9KRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odXFMKRMEea9H8G0NEtFEQ" name="TdaDataModelException" visibility="package" method="_odlHoKRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_odXFMqRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_odXFM6RMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_odXFMaRMEea9H8G0NEtFEQ" name="cause" type="_odWeIKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odXFNKRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odXFNaRMEea9H8G0NEtFEQ" name="TdaDataModelException" visibility="package" method="_odlHo6RMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_odXsQKRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_odXsQaRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_odXFNqRMEea9H8G0NEtFEQ" name="message">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odXFN6RMEea9H8G0NEtFEQ" name="cause" type="_odWeIKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odXsQqRMEea9H8G0NEtFEQ" type="_och-wqRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_oclCEKRMEea9H8G0NEtFEQ" name="TestOutcomeCounter">
+                <ownedComment xmi:id="_odoK8aRMEea9H8G0NEtFEQ">
+                  <body>Represents a counter for all {@link Outcome}s of a {@link TestRun}.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_odeZ8qRMEea9H8G0NEtFEQ" name="TOTAL_TESTS" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odfBAaRMEea9H8G0NEtFEQ" name="EXECUTED_TESTS" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odfoEaRMEea9H8G0NEtFEQ" name="PASSED_TESTS" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odfoE6RMEea9H8G0NEtFEQ" name="FAILED_TESTS" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHp6RMEea9H8G0NEtFEQ" name="TestOutcomeCounter" specification="_ocmQMKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHqKRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlHqaRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlHqqRMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlHq6RMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlHrKRMEea9H8G0NEtFEQ" type="_oclCEKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+		Validator.validateCounterNumbers(totalTests, executedTests, passedTests, failedTests);
+		this.TOTAL_TESTS = totalTests;
+		this.EXECUTED_TESTS = executedTests;
+		this.PASSED_TESTS = passedTests;
+		this.FAILED_TESTS = failedTests;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHraRMEea9H8G0NEtFEQ" name="getTotalTests" specification="_ocm3QKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHrqRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return TOTAL_TESTS;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHr6RMEea9H8G0NEtFEQ" name="getExecutedTests" specification="_ocm3QqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHsKRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return EXECUTED_TESTS;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHsaRMEea9H8G0NEtFEQ" name="getPassedTests" specification="_ocneUKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHsqRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return PASSED_TESTS;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlHs6RMEea9H8G0NEtFEQ" name="getFailedTests" specification="_ocneUqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlHtKRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return FAILED_TESTS;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ocmQMKRMEea9H8G0NEtFEQ" name="TestOutcomeCounter" visibility="package" method="_odlHp6RMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_ocmQNaRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_ocmQNqRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_odoK8qRMEea9H8G0NEtFEQ">
+                    <body>Creates a new {@code TestOutcomeCounter}.
+	 * 
+	 * @param totalTests
+	 *            the number of total tests. Mustn't be below one.
+	 * @param executedTests
+	 *            the number of executed tests. Mustn't be below zero.
+	 * @param passedTests
+	 *            the number of passed tests. Mustn't be below zero.
+	 * @param failedTests
+	 *            the number of failed tests. Mustn't be below zero.
+	 * @throws TdaDataModelException
+	 *             if any of the arguments is not valid.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocmQMaRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocmQMqRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocmQM6RMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocmQNKRMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocmQN6RMEea9H8G0NEtFEQ" type="_oclCEKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocm3QKRMEea9H8G0NEtFEQ" name="getTotalTests" method="_odlHraRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK86RMEea9H8G0NEtFEQ">
+                    <body>Getter for the total number of {@link UnitTest}s.
+	 * 
+	 * @return the total number of {@link UnitTest}s.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocm3QaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocm3QqRMEea9H8G0NEtFEQ" name="getExecutedTests" method="_odlHr6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK9KRMEea9H8G0NEtFEQ">
+                    <body>Getter for the number of executed {@link UnitTest}s.
+	 * 
+	 * @return the number of executed {@link UnitTest}s.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocm3Q6RMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocneUKRMEea9H8G0NEtFEQ" name="getPassedTests" method="_odlHsaRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK9aRMEea9H8G0NEtFEQ">
+                    <body>Getter for the number of passed {@link UnitTest}s.
+	 * 
+	 * @return the number of passed {@link UnitTest}s.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocneUaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocneUqRMEea9H8G0NEtFEQ" name="getFailedTests" method="_odlHs6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK9qRMEea9H8G0NEtFEQ">
+                    <body>Getter for the number of failed {@link UnitTest}s.
+	 * 
+	 * @return the number of failed {@link UnitTest}s.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocneU6RMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ocoscKRMEea9H8G0NEtFEQ" name="TestRun">
+                <ownedComment xmi:id="_odoK96RMEea9H8G0NEtFEQ">
+                  <body>Represents a test run.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_odgPIaRMEea9H8G0NEtFEQ" name="ID" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odg2MaRMEea9H8G0NEtFEQ" name="CREATION_DATE" visibility="private" isLeaf="true" type="_odN7QaRMEea9H8G0NEtFEQ" isReadOnly="true" association="_odqAIKRMEea9H8G0NEtFEQ"/>
+                <ownedAttribute xmi:id="_odg2M6RMEea9H8G0NEtFEQ" name="OUTCOME" visibility="private" isLeaf="true" type="_ocgwoKRMEea9H8G0NEtFEQ" isReadOnly="true"/>
+                <ownedAttribute xmi:id="_odhdQaRMEea9H8G0NEtFEQ" name="CLASS_LIST" visibility="private" isLeaf="true" type="_ocuzEKRMEea9H8G0NEtFEQ" isOrdered="true" isReadOnly="true" association="_odqnMaRMEea9H8G0NEtFEQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_odhdQqRMEea9H8G0NEtFEQ" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odhdRKRMEea9H8G0NEtFEQ" name="COUNTER" visibility="private" isLeaf="true" type="_oclCEKRMEea9H8G0NEtFEQ" isReadOnly="true" association="_odrOQaRMEea9H8G0NEtFEQ"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odlusKRMEea9H8G0NEtFEQ" name="TestRun" specification="_odYTUKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odlusaRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlusqRMEea9H8G0NEtFEQ" name="creationDate">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlus6RMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odlutKRMEea9H8G0NEtFEQ" name="classList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odlutaRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlutqRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odlut6RMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odluuKRMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odluuaRMEea9H8G0NEtFEQ" type="_ocoscKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+		Validator.validateTestRun(id, creationDate, outcome, classList);
+		ID = id;
+		CREATION_DATE = stringToDate(creationDate);
+		OUTCOME = outcome;
+		CLASS_LIST = classList;
+		COUNTER = new TestOutcomeCounter(totalTests, executedTests, passedTests, failedTests);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odluuqRMEea9H8G0NEtFEQ" name="stringToDate" specification="_ocp6kKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odluu6RMEea9H8G0NEtFEQ" name="dateAsString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odluvKRMEea9H8G0NEtFEQ" type="_odN7QaRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>try {
+			Instant instant = Instant.parse(dateAsString.substring(0, dateAsString.length() - 6) + &quot;Z&quot;);
+			LocalDateTime date = LocalDateTime.ofInstant(instant,
+					ZoneOffset.of((dateAsString.substring(dateAsString.length() - 6, dateAsString.length()))));
+			return date;
+		} catch (DateTimeException e) {
+			throw new TdaDataModelException(
+					&quot;A problem occurred while parsing the date. Please check the format of the string.&quot;, e);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odluvaRMEea9H8G0NEtFEQ" name="getId" specification="_ocqhoKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odluvqRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ID;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odluv6RMEea9H8G0NEtFEQ" name="getCreationDate" specification="_ocqhoqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odluwKRMEea9H8G0NEtFEQ" type="_odN7QaRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>return CREATION_DATE;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odluwaRMEea9H8G0NEtFEQ" name="getOutcome" specification="_ocqho6RMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odluwqRMEea9H8G0NEtFEQ" type="_ocgwoKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>return OUTCOME;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odluw6RMEea9H8G0NEtFEQ" name="getCLassList" specification="_ocrIsKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odluxKRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_odluxaRMEea9H8G0NEtFEQ" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return CLASS_LIST;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVwKRMEea9H8G0NEtFEQ" name="getTestedClass" specification="_ocrvwKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVwaRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odmVwqRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>for (TestedClass testedClass : CLASS_LIST) {
+			if (testedClass.getName().equals(name)) {
+				return testedClass;
+			}
+		}
+		throw new TdaDataModelException(&quot;Class &quot; + name + &quot; not found.&quot;);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVw6RMEea9H8G0NEtFEQ" name="getCounter" specification="_ocsW0KRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVxKRMEea9H8G0NEtFEQ" type="_oclCEKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>return COUNTER;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ocp6kKRMEea9H8G0NEtFEQ" name="stringToDate" visibility="private" method="_odluuqRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK-aRMEea9H8G0NEtFEQ">
+                    <body>Parses a {@link String} in form of &quot;2016-09-21T13:37:43.7071946+02:00&quot; to
+	 * a {@link Date}.
+	 * 
+	 * @param dateAsString
+	 *            the date as {@link String}.
+	 * @return the date as {@link LocalDateTime}.
+	 * @throws TdaDataModelException
+	 *             if a problem occurs while parsing the date.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocp6kaRMEea9H8G0NEtFEQ" name="dateAsString">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odZhcaRMEea9H8G0NEtFEQ" type="_odN7QaRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocqhoKRMEea9H8G0NEtFEQ" name="getId" method="_odluvaRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK-qRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestRun}'s ID.
+	 * 
+	 * @return the {@code TestRun}'s ID.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocqhoaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocqhoqRMEea9H8G0NEtFEQ" name="getCreationDate" method="_odluv6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK-6RMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestRun}'s creation date.
+	 * 
+	 * @return the {@code TestRun}'s creation date.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odZhcqRMEea9H8G0NEtFEQ" type="_odN7QaRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocqho6RMEea9H8G0NEtFEQ" name="getOutcome" method="_odluwaRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoK_KRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestRun}'s overall outcome.
+	 * 
+	 * @return {@code true} if no {@link UnitTest} failed, otherwise
+	 *         {@code false}.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odPwcKRMEea9H8G0NEtFEQ" type="_ocgwoKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocrIsKRMEea9H8G0NEtFEQ" name="getCLassList" method="_odluw6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyAKRMEea9H8G0NEtFEQ">
+                    <body>Getter for the list of the {@code TestRun}'s {@link TestedClass}'.
+	 * 
+	 * @return the list of the {@code TestRun}'s {@link TestedClass}'.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocrIsaRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ocrIsqRMEea9H8G0NEtFEQ" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocrvwKRMEea9H8G0NEtFEQ" name="getTestedClass" method="_odmVwKRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyAaRMEea9H8G0NEtFEQ">
+                    <body>Getter for a specific class of the TestRun.
+	 * 
+	 * @param name
+	 *            the name of the class.
+	 * @return the class with the respective name, if the class wasn't found,
+	 *         {@code null} will be returned.
+	 * @throws TdaDataModelException
+	 *             if the class is not found.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocrvwaRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odQXgKRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocsW0KRMEea9H8G0NEtFEQ" name="getCounter" method="_odmVw6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyAqRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestRun}'s counter, which counts the quantity of
+	 * the different {@link Outcome}s of all {@link UnitTest}s.
+	 * 
+	 * @return the {@code TestRun}'s counter.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odQXgaRMEea9H8G0NEtFEQ" type="_oclCEKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odYTUKRMEea9H8G0NEtFEQ" name="TestRun" method="_odlusKRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_odY6ZaRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_odY6ZqRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_odoK-KRMEea9H8G0NEtFEQ">
+                    <body>Creates a new {@code TestRun}.
+	 * 
+	 * @param id
+	 *            the {@code TestRun}'s ID. Mustn't be null or empty.
+	 * @param creationDate
+	 *            the {@code TestRun}'s creation date in the form
+	 *            &quot;2016-09-21T13:37:43.7071946+02:00&quot;.
+	 * @param outcome
+	 *            the {@code TestRun}'s outcome. Mustn't be null.
+	 * @param classList
+	 *            the {@code TestRun}'s list of tested classes. Mustn't be null
+	 *            or empty.
+	 * @param totalTests
+	 *            the {@code TestRun}'s number of total tests. Mustn't be below
+	 *            one.
+	 * @param executedTests
+	 *            the {@code TestRun}'s number of executed tests. Mustn't be
+	 *            below zero.
+	 * @param passedTests
+	 *            the {@code TestRun}'s number of passed tests. Mustn't be below
+	 *            zero.
+	 * @param failedTests
+	 *            the {@code TestRun}'s number of failed tests. Mustn't be below
+	 *            zero.
+	 * @throws TdaDataModelException
+	 *             if any of the arguments is not valid.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odYTUaRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odYTUqRMEea9H8G0NEtFEQ" name="creationDate">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odYTU6RMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odY6YKRMEea9H8G0NEtFEQ" name="classList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odY6YaRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odY6YqRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odY6Y6RMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odY6ZKRMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odY6Z6RMEea9H8G0NEtFEQ" type="_ocoscKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ocuzEKRMEea9H8G0NEtFEQ" name="TestedClass">
+                <ownedComment xmi:id="_odoyA6RMEea9H8G0NEtFEQ">
+                  <body>Represents a class which is tested by a number of {@link UnitTest}s.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_odiEUaRMEea9H8G0NEtFEQ" name="NAME" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odirYaRMEea9H8G0NEtFEQ" name="TEST_LIST" visibility="private" isLeaf="true" type="_ocxPUKRMEea9H8G0NEtFEQ" isOrdered="true" isReadOnly="true" association="_odrORKRMEea9H8G0NEtFEQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_odirYqRMEea9H8G0NEtFEQ" value="*"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odirZKRMEea9H8G0NEtFEQ" name="FAILURE_PERCENTAGE" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVxaRMEea9H8G0NEtFEQ" name="TestedClass" specification="_odavkKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVxqRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odmVx6RMEea9H8G0NEtFEQ" name="testList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odmVyKRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+		Validator.validateTestedClass(name, testList);
+		NAME = name;
+		TEST_LIST = testList;
+		FAILURE_PERCENTAGE = calcFailurePercentage();
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVyaRMEea9H8G0NEtFEQ" name="calcFailurePercentage" specification="_ocvaIKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVyqRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>double failed = 0.0;
+		double total = TEST_LIST.size();
+
+		for (UnitTest unitTest : TEST_LIST) {
+			if (unitTest.getOutcome() == Outcome.FAILED) {
+				failed++;
+			}
+		}
+
+		return Math.round((failed / total) * 10000.0) / 100.0;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVy6RMEea9H8G0NEtFEQ" name="getName" specification="_ocwBMKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVzKRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return NAME;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odmVzaRMEea9H8G0NEtFEQ" name="getTestList" specification="_ocwBMqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odmVzqRMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_odmVz6RMEea9H8G0NEtFEQ" value="*"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return TEST_LIST;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm80KRMEea9H8G0NEtFEQ" name="getFailurePercentage" specification="_ocwBNaRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm80aRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return FAILURE_PERCENTAGE;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ocvaIKRMEea9H8G0NEtFEQ" name="calcFailurePercentage" visibility="private" method="_odmVyaRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyBaRMEea9H8G0NEtFEQ">
+                    <body>Calculator for the failure percentage of the {@code TestedClass}.
+	 * 
+	 * @return the failure percentage of the {@code TestedClass}.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocvaIaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocwBMKRMEea9H8G0NEtFEQ" name="getName" method="_odmVy6RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyBqRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestedClass}' name.
+	 * 
+	 * @return the {@code TestedClass}' name.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocwBMaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocwBMqRMEea9H8G0NEtFEQ" name="getTestList" method="_odmVzaRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyB6RMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestedClass}' list of {@link UnitTest}s.
+	 * 
+	 * @return the {@code TestedClass}' list of {@link UnitTest}s.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocwBM6RMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" isOrdered="true" direction="return">
+                    <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ocwBNKRMEea9H8G0NEtFEQ" value="*"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_ocwBNaRMEea9H8G0NEtFEQ" name="getFailurePercentage" method="_odm80KRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyCKRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code TestedClass}' failure percentage.
+	 * 
+	 * @return the {@code TestedClass}' failure percentage rounded to two
+	 *         decimal places.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocwBNqRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odavkKRMEea9H8G0NEtFEQ" name="TestedClass" method="_odmVxaRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_odavk6RMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_odavlKRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_odoyBKRMEea9H8G0NEtFEQ">
+                    <body>Creates a new {@code TestedClass}.
+	 * 
+	 * @param name
+	 *            the {@code TestedClass}' name. Mustn't be null or empty.
+	 * @param testList
+	 *            the {@code TestedClass}' list of {@link UnitTest}s. Mustn't be
+	 *            null or empty.
+	 * @throws TdaDataModelException
+	 *             if any of the arguments is not valid.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odavkaRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odavkqRMEea9H8G0NEtFEQ" name="testList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odavlaRMEea9H8G0NEtFEQ" type="_ocuzEKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_ocxPUKRMEea9H8G0NEtFEQ" name="UnitTest">
+                <ownedComment xmi:id="_odoyCaRMEea9H8G0NEtFEQ">
+                  <body>Represents an unit test.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_odjScaRMEea9H8G0NEtFEQ" name="ID" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odjSc6RMEea9H8G0NEtFEQ" name="NAME" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_odj5gaRMEea9H8G0NEtFEQ" name="OUTCOME" visibility="private" isLeaf="true" type="_ocgwoKRMEea9H8G0NEtFEQ" isReadOnly="true"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm80qRMEea9H8G0NEtFEQ" name="UnitTest" specification="_odSMsKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm806RMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odm81KRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odm81aRMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odm81qRMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+		Validator.validateUnitTest(id, name);
+		this.ID = id;
+		this.NAME = name;
+		this.OUTCOME = outcome;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm816RMEea9H8G0NEtFEQ" name="UnitTest" specification="_ocydcKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm82KRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odm82aRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odm82qRMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>super();
+		Validator.validateUnitTest(id, name);
+		this.ID = id;
+		this.NAME = name;
+		this.OUTCOME = null;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm826RMEea9H8G0NEtFEQ" name="getId" specification="_oczEgKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm83KRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ID;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm83aRMEea9H8G0NEtFEQ" name="getName" specification="_oczEgqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm83qRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return NAME;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm836RMEea9H8G0NEtFEQ" name="getOutcome" specification="_oczEhKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm84KRMEea9H8G0NEtFEQ" type="_ocgwoKRMEea9H8G0NEtFEQ" direction="return"/>
+                  <language>java</language>
+                  <body>return OUTCOME;
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ocydcKRMEea9H8G0NEtFEQ" name="UnitTest" method="_odm816RMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_ocydc6RMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_ocyddKRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_odoyC6RMEea9H8G0NEtFEQ">
+                    <body>Creates a new unexecuted {@code UnitTest}. The outcome is set on
+	 * {@code null}.
+	 * 
+	 * @param id
+	 *            the {@code UnitTest}'s ID. Mustn't be null or empty.
+	 * @param name
+	 *            the {@code UnitTest}'s name. Mustn't be null or empty.
+	 * @throws TdaDataModelException
+	 *             if any of the arguments is not valid.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_ocydcaRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocydcqRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_ocyddaRMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oczEgKRMEea9H8G0NEtFEQ" name="getId" method="_odm826RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyDKRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code UnitTest}'s ID.
+	 * 
+	 * @return the {@code UnitTest}'s ID.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_oczEgaRMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oczEgqRMEea9H8G0NEtFEQ" name="getName" method="_odm83aRMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyDaRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code UnitTest}'s name.
+	 * 
+	 * @return the {@code UnitTest}'s name.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_oczEg6RMEea9H8G0NEtFEQ" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oczEhKRMEea9H8G0NEtFEQ" name="getOutcome" method="_odm836RMEea9H8G0NEtFEQ">
+                  <ownedComment xmi:id="_odoyDqRMEea9H8G0NEtFEQ">
+                    <body>Getter for the {@code UnitTest}'s {@link Outcome}.
+	 * 
+	 * @return the {@code UnitTest}'s {@link Outcome}.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odSzxqRMEea9H8G0NEtFEQ" type="_ocgwoKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odSMsKRMEea9H8G0NEtFEQ" name="UnitTest" method="_odm80qRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <eAnnotations xmi:id="_odSzw6RMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_odSzxKRMEea9H8G0NEtFEQ" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_odoyCqRMEea9H8G0NEtFEQ">
+                    <body>Creates a new executed {@code UnitTest}.
+	 * 
+	 * @param id
+	 *            the {@code UnitTest}'s ID. Mustn't be null or empty.
+	 * @param name
+	 *            the {@code UnitTest}'s name. Mustn't be null or empty.
+	 * @param outcome
+	 *            the {@code UnitTest}'s outcome. Mustn't be null.
+	 * @throws TdaDataModelException
+	 *             if any of the arguments is not valid.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_odSzwKRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odSzwaRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odSzwqRMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odSzxaRMEea9H8G0NEtFEQ" type="_ocxPUKRMEea9H8G0NEtFEQ" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_oc0SoKRMEea9H8G0NEtFEQ" name="Validator" visibility="package">
+                <ownedComment xmi:id="_odoyD6RMEea9H8G0NEtFEQ">
+                  <body>Validation class for the logic package.
+
+@author Nicolas Gross
+ *</body>
+                </ownedComment>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odm84aRMEea9H8G0NEtFEQ" name="validateUnitTest" specification="_oc05sKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odm84qRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odm846RMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>if (id == null || name == null || id.isEmpty() || name.isEmpty()) {
+			throw new TdaDataModelException(&quot;The ID and name of an UnitTest can't be null or left empty.&quot;);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odnj4KRMEea9H8G0NEtFEQ" name="validateTestedClass" specification="_odbWoaRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odnj4aRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj4qRMEea9H8G0NEtFEQ" name="testList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <language>java</language>
+                  <body>if (name == null || testList == null || name.isEmpty() || testList.isEmpty()) {
+			throw new TdaDataModelException(&quot;The name and test list of a TestedClass can't be null or left empty.&quot;);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odnj46RMEea9H8G0NEtFEQ" name="validateTestRun" specification="_odckwKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odnj5KRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj5aRMEea9H8G0NEtFEQ" name="creationDate">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj5qRMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odnj56RMEea9H8G0NEtFEQ" name="classList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                  <language>java</language>
+                  <body>if (id == null || creationDate == null || outcome == null || classList == null || id.isEmpty()
+				|| creationDate.isEmpty() || classList.isEmpty()) {
+			throw new TdaDataModelException(&quot;The arguments can't be null or left empty.&quot;);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_odnj6KRMEea9H8G0NEtFEQ" name="validateCounterNumbers" specification="_oc1gwKRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odnj6aRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj6qRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj66RMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odnj7KRMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>if (totalTests &lt; 1 || executedTests &lt; 0 || passedTests &lt; 0 || failedTests &lt; 0) {
+			throw new TdaDataModelException(
+					&quot;The total number of tests has to be greater than 0 and the other numbers mustn't be below zero.&quot;);
+		}
+	</body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_oc05sKRMEea9H8G0NEtFEQ" name="validateUnitTest" visibility="package" isStatic="true" method="_odm84aRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_oc05saRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oc05sqRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oc1gwKRMEea9H8G0NEtFEQ" name="validateCounterNumbers" visibility="package" isStatic="true" method="_odnj6KRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_oc1gwaRMEea9H8G0NEtFEQ" name="totalTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oc1gwqRMEea9H8G0NEtFEQ" name="executedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oc2H0KRMEea9H8G0NEtFEQ" name="passedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oc2H0aRMEea9H8G0NEtFEQ" name="failedTests">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odbWoaRMEea9H8G0NEtFEQ" name="validateTestedClass" visibility="package" isStatic="true" method="_odnj4KRMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odb9sKRMEea9H8G0NEtFEQ" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odb9saRMEea9H8G0NEtFEQ" name="testList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_odckwKRMEea9H8G0NEtFEQ" name="validateTestRun" visibility="package" isStatic="true" method="_odnj46RMEea9H8G0NEtFEQ" raisedException="_och-wqRMEea9H8G0NEtFEQ">
+                  <ownedParameter xmi:id="_odckwaRMEea9H8G0NEtFEQ" name="id">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odckwqRMEea9H8G0NEtFEQ" name="creationDate">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_odckw6RMEea9H8G0NEtFEQ" name="outcome" type="_ocgwoKRMEea9H8G0NEtFEQ"/>
+                  <ownedParameter xmi:id="_odckxKRMEea9H8G0NEtFEQ" name="classList" type="_odPJYaRMEea9H8G0NEtFEQ"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_odqAIKRMEea9H8G0NEtFEQ" name="" memberEnd="_odqAIaRMEea9H8G0NEtFEQ _odg2MaRMEea9H8G0NEtFEQ">
+                <ownedEnd xmi:id="_odqAIaRMEea9H8G0NEtFEQ" name="" type="_ocoscKRMEea9H8G0NEtFEQ" association="_odqAIKRMEea9H8G0NEtFEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_odqnMaRMEea9H8G0NEtFEQ" name="" memberEnd="_odqnMqRMEea9H8G0NEtFEQ _odhdQaRMEea9H8G0NEtFEQ">
+                <ownedEnd xmi:id="_odqnMqRMEea9H8G0NEtFEQ" name="" type="_ocoscKRMEea9H8G0NEtFEQ" association="_odqnMaRMEea9H8G0NEtFEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_odrOQaRMEea9H8G0NEtFEQ" name="" memberEnd="_odrOQqRMEea9H8G0NEtFEQ _odhdRKRMEea9H8G0NEtFEQ">
+                <ownedEnd xmi:id="_odrOQqRMEea9H8G0NEtFEQ" name="" type="_ocoscKRMEea9H8G0NEtFEQ" association="_odrOQaRMEea9H8G0NEtFEQ"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_odrORKRMEea9H8G0NEtFEQ" name="" memberEnd="_odrORaRMEea9H8G0NEtFEQ _odirYaRMEea9H8G0NEtFEQ">
+                <ownedEnd xmi:id="_odrORaRMEea9H8G0NEtFEQ" name="" type="_ocuzEKRMEea9H8G0NEtFEQ" association="_odrORKRMEea9H8G0NEtFEQ"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ocPD0KRMEea9H8G0NEtFEQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ocPD0aRMEea9H8G0NEtFEQ" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_odMtIKRMEea9H8G0NEtFEQ" name="DateTimeException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_odNUMaRMEea9H8G0NEtFEQ" name="Instant"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_odN7QaRMEea9H8G0NEtFEQ" name="LocalDateTime"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_odN7Q6RMEea9H8G0NEtFEQ" name="ZoneOffset"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ocPD0qRMEea9H8G0NEtFEQ" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_odOiUaRMEea9H8G0NEtFEQ" name="Date"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_odPJYaRMEea9H8G0NEtFEQ" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_odV3EKRMEea9H8G0NEtFEQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_odV3EaRMEea9H8G0NEtFEQ" name="Exception"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_odWeIKRMEea9H8G0NEtFEQ" name="Throwable"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_oWck4KRMEea9H8G0NEtFEQ">
+      <eAnnotations xmi:id="_oWck4aRMEea9H8G0NEtFEQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_oWck4qRMEea9H8G0NEtFEQ" base_Package="_oWPJgKRMEea9H8G0NEtFEQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ochXsKRMEea9H8G0NEtFEQ" base_Element="_ocgwoKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odNUMKRMEea9H8G0NEtFEQ" base_Element="_odMtIKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odN7QKRMEea9H8G0NEtFEQ" base_Element="_odNUMaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odN7QqRMEea9H8G0NEtFEQ" base_Element="_odN7QaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odOiUKRMEea9H8G0NEtFEQ" base_Element="_odN7Q6RMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odPJYKRMEea9H8G0NEtFEQ" base_Element="_odOiUaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odPJYqRMEea9H8G0NEtFEQ" base_Element="_odPJYaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odV3EqRMEea9H8G0NEtFEQ" base_Element="_odV3EaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odWeIaRMEea9H8G0NEtFEQ" base_Element="_odWeIKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Generics xmi:id="_odZhcKRMEea9H8G0NEtFEQ" genericsValue="TestedClass" base_Element="_odY6YKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Generics xmi:id="_odbWoKRMEea9H8G0NEtFEQ" genericsValue="UnitTest" base_Element="_odavkqRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Generics xmi:id="_odb9sqRMEea9H8G0NEtFEQ" genericsValue="UnitTest" base_Element="_odb9saRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Generics xmi:id="_oddL0KRMEea9H8G0NEtFEQ" genericsValue="TestedClass" base_Element="_odckxKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odfBAKRMEea9H8G0NEtFEQ" base_Element="_odeZ8qRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odfoEKRMEea9H8G0NEtFEQ" base_Element="_odfBAaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odfoEqRMEea9H8G0NEtFEQ" base_Element="_odfoEaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odgPIKRMEea9H8G0NEtFEQ" base_Element="_odfoE6RMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odg2MKRMEea9H8G0NEtFEQ" base_Element="_odgPIaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odg2MqRMEea9H8G0NEtFEQ" base_Element="_odg2MaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odhdQKRMEea9H8G0NEtFEQ" base_Element="_odg2M6RMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odhdQ6RMEea9H8G0NEtFEQ" base_Element="_odhdQaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odiEUKRMEea9H8G0NEtFEQ" base_Element="_odhdRKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odirYKRMEea9H8G0NEtFEQ" base_Element="_odiEUaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odirY6RMEea9H8G0NEtFEQ" base_Element="_odirYaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odjScKRMEea9H8G0NEtFEQ" base_Element="_odirZKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odjScqRMEea9H8G0NEtFEQ" base_Element="_odjScaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odj5gKRMEea9H8G0NEtFEQ" base_Element="_odjSc6RMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_odj5gqRMEea9H8G0NEtFEQ" base_Element="_odj5gaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odqnMKRMEea9H8G0NEtFEQ" base_Element="_odqAIKRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odrOQKRMEea9H8G0NEtFEQ" base_Element="_odqnMaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odrOQ6RMEea9H8G0NEtFEQ" base_Element="_odrOQaRMEea9H8G0NEtFEQ"/>
+  <UMLLabProfile:Reference xmi:id="_odr1UKRMEea9H8G0NEtFEQ" base_Element="_odrORKRMEea9H8G0NEtFEQ"/>
+</xmi:XMI>

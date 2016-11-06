@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_ogVgsKRMEea9H8G0NEtFEQ">
+  <modelElement href="swl-tda.uml#_ocKLUKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orLewaRMEea9H8G0NEtFEQ" targetItem="_orMs4KRMEea9H8G0NEtFEQ" sourceItem="_orLewKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orPJIaRMEea9H8G0NEtFEQ" targetItem="_orQ-UKRMEea9H8G0NEtFEQ" sourceItem="_orPJIKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orPwMKRMEea9H8G0NEtFEQ" targetItem="_orQ-Z6RMEea9H8G0NEtFEQ" sourceItem="_orPJIqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orPwMqRMEea9H8G0NEtFEQ" targetItem="_orQ-eaRMEea9H8G0NEtFEQ" sourceItem="_orPwMaRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orPwNKRMEea9H8G0NEtFEQ" targetItem="_orQ-fqRMEea9H8G0NEtFEQ" sourceItem="_orPwM6RMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orQXQKRMEea9H8G0NEtFEQ" targetItem="_orQ-g6RMEea9H8G0NEtFEQ" sourceItem="_orPwNaRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orQXQqRMEea9H8G0NEtFEQ" targetItem="_orQ-iKRMEea9H8G0NEtFEQ" sourceItem="_orQXQaRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_orUBoKRMEea9H8G0NEtFEQ" sourceAnchor="15.0,0.0" targetAnchor="694.0,234.0" target="_orQ-UKRMEea9H8G0NEtFEQ" source="_orZhOaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odrOQaRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orr1EaRMEea9H8G0NEtFEQ" position="230.0,230.0"/>
+    <stereotypes xmi:id="_orUos6RMEea9H8G0NEtFEQ" name="Reference">
+      <modelElement href="swl-tda.uml#_odrOQ6RMEea9H8G0NEtFEQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_orUosKRMEea9H8G0NEtFEQ" text="">
+      <visualProperties xmi:id="_owjG86RMEea9H8G0NEtFEQ" position="2.0,-1.0" visible="false"/>
+    </nameVisual>
+    <sourceRole xmi:id="_orUosaRMEea9H8G0NEtFEQ" aggregationKind="NONE" name="">
+      <modelElement href="swl-tda.uml#_odrOQqRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owjG8qRMEea9H8G0NEtFEQ" position="-17.0,-92.0"/>
+      <visibility xmi:id="_orXsAaRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orXsAKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_orUosqRMEea9H8G0NEtFEQ" aggregationKind="NONE" name="COUNTER" navigable="true">
+      <modelElement href="swl-tda.uml#_odhdRKRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owjuAKRMEea9H8G0NEtFEQ" position="-89.0,41.0"/>
+      <visibility xmi:id="_orXsA6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orXsAqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orUBoqRMEea9H8G0NEtFEQ" targetItem="_orZhOaRMEea9H8G0NEtFEQ" sourceItem="_orUBoaRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orVPwaRMEea9H8G0NEtFEQ" targetItem="_orZhVaRMEea9H8G0NEtFEQ" sourceItem="_orVPwKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orVPw6RMEea9H8G0NEtFEQ" targetItem="_orZhXaRMEea9H8G0NEtFEQ" sourceItem="_orVPwqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orVPxaRMEea9H8G0NEtFEQ" targetItem="_orZhYqRMEea9H8G0NEtFEQ" sourceItem="_orVPxKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orV20aRMEea9H8G0NEtFEQ" targetItem="_orZhZ6RMEea9H8G0NEtFEQ" sourceItem="_orV20KRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orV206RMEea9H8G0NEtFEQ" targetItem="_orZhbKRMEea9H8G0NEtFEQ" sourceItem="_orV20qRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orV21aRMEea9H8G0NEtFEQ" targetItem="_orZhcaRMEea9H8G0NEtFEQ" sourceItem="_orV21KRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orWd4aRMEea9H8G0NEtFEQ" targetItem="_orZheaRMEea9H8G0NEtFEQ" sourceItem="_orWd4KRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orWd46RMEea9H8G0NEtFEQ" targetItem="_orZhfqRMEea9H8G0NEtFEQ" sourceItem="_orWd4qRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_orY6IKRMEea9H8G0NEtFEQ" source="_orZhOaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odqAIKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orrOAKRMEea9H8G0NEtFEQ" position="190.0,190.0"/>
+    <stereotypes xmi:id="_orY6IaRMEea9H8G0NEtFEQ" name="Reference">
+      <modelElement href="swl-tda.uml#_odqnMKRMEea9H8G0NEtFEQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_orY6IqRMEea9H8G0NEtFEQ" text=""/>
+    <sourceRole xmi:id="_orY6I6RMEea9H8G0NEtFEQ" aggregationKind="NONE" name="">
+      <modelElement href="swl-tda.uml#_odqAIaRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orY6JKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orY6JaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_orY6JqRMEea9H8G0NEtFEQ" aggregationKind="NONE" name="CREATION_DATE" navigable="true">
+      <modelElement href="swl-tda.uml#_odg2MaRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orY6J6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orY6KKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_orZhMKRMEea9H8G0NEtFEQ" sourceAnchor="1256.0,138.0" targetAnchor="243.0,192.0" target="_org18KRMEea9H8G0NEtFEQ" source="_orZhOaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odqnMaRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orr1EKRMEea9H8G0NEtFEQ" position="210.0,210.0"/>
+    <bendpoints xmi:id="_xwLUYKRMEea9H8G0NEtFEQ" sourceX="348" targetY="200"/>
+    <stereotypes xmi:id="_orZhMaRMEea9H8G0NEtFEQ" name="Reference">
+      <modelElement href="swl-tda.uml#_odrOQKRMEea9H8G0NEtFEQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_orZhMqRMEea9H8G0NEtFEQ" text="">
+      <visualProperties xmi:id="_owkVEKRMEea9H8G0NEtFEQ" position="-50.0,-61.0" visible="false"/>
+    </nameVisual>
+    <sourceRole xmi:id="_orZhM6RMEea9H8G0NEtFEQ" aggregationKind="NONE" name="">
+      <modelElement href="swl-tda.uml#_odqnMqRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owjuAaRMEea9H8G0NEtFEQ" position="21.0,2.0"/>
+      <visibility xmi:id="_orZhNKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhNaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_orZhNqRMEea9H8G0NEtFEQ" aggregationKind="NONE" name="CLASS_LIST" navigable="true">
+      <modelElement href="swl-tda.uml#_odhdQaRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owkVEaRMEea9H8G0NEtFEQ" position="-104.0,37.0"/>
+      <visibility xmi:id="_orZhN6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhOKRMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_ordyoaRMEea9H8G0NEtFEQ" targetItem="_org18KRMEea9H8G0NEtFEQ" sourceItem="_ordyoKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oreZsaRMEea9H8G0NEtFEQ" targetItem="_org2AqRMEea9H8G0NEtFEQ" sourceItem="_oreZsKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oreZs6RMEea9H8G0NEtFEQ" targetItem="_org2B6RMEea9H8G0NEtFEQ" sourceItem="_oreZsqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orfAwaRMEea9H8G0NEtFEQ" targetItem="_org2DKRMEea9H8G0NEtFEQ" sourceItem="_orfAwKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orfAw6RMEea9H8G0NEtFEQ" targetItem="_org2EaRMEea9H8G0NEtFEQ" sourceItem="_orfAwqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orfAxaRMEea9H8G0NEtFEQ" targetItem="_org2FqRMEea9H8G0NEtFEQ" sourceItem="_orfAxKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_orgO4KRMEea9H8G0NEtFEQ" sourceAnchor="243.0,0.0" targetAnchor="0.0,97.0" target="_orlucKRMEea9H8G0NEtFEQ" source="_org18KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odrORKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orr1EqRMEea9H8G0NEtFEQ" position="250.0,250.0"/>
+    <bendpoints xmi:id="_xwLUYaRMEea9H8G0NEtFEQ" sourceY="-152" targetX="-339"/>
+    <stereotypes xmi:id="_orgO4aRMEea9H8G0NEtFEQ" name="Reference">
+      <modelElement href="swl-tda.uml#_odr1UKRMEea9H8G0NEtFEQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_orgO4qRMEea9H8G0NEtFEQ" text="">
+      <visualProperties xmi:id="_owk8IKRMEea9H8G0NEtFEQ" position="124.42857142857133,1.9999999999999716" visible="false"/>
+    </nameVisual>
+    <sourceRole xmi:id="_orgO46RMEea9H8G0NEtFEQ" aggregationKind="NONE" name="">
+      <modelElement href="swl-tda.uml#_odrORaRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owkVEqRMEea9H8G0NEtFEQ" position="2.0,-85.0"/>
+      <visibility xmi:id="_orgO5KRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orgO5aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_orgO5qRMEea9H8G0NEtFEQ" aggregationKind="NONE" name="TEST_LIST" navigable="true">
+      <modelElement href="swl-tda.uml#_odirYaRMEea9H8G0NEtFEQ"/>
+      <visualProperties xmi:id="_owk8IaRMEea9H8G0NEtFEQ" position="-153.5,2.0"/>
+      <visibility xmi:id="_orgO56RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orgO6KRMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orjSMaRMEea9H8G0NEtFEQ" targetItem="_orlucKRMEea9H8G0NEtFEQ" sourceItem="_orjSMKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orj5QaRMEea9H8G0NEtFEQ" targetItem="_orlugqRMEea9H8G0NEtFEQ" sourceItem="_orj5QKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orj5Q6RMEea9H8G0NEtFEQ" targetItem="_orlujqRMEea9H8G0NEtFEQ" sourceItem="_orj5QqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orj5RaRMEea9H8G0NEtFEQ" targetItem="_orluk6RMEea9H8G0NEtFEQ" sourceItem="_orj5RKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orkgUaRMEea9H8G0NEtFEQ" targetItem="_orlumKRMEea9H8G0NEtFEQ" sourceItem="_orkgUKRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_orkgU6RMEea9H8G0NEtFEQ" targetItem="_orlunaRMEea9H8G0NEtFEQ" sourceItem="_orkgUqRMEea9H8G0NEtFEQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oroKsaRMEea9H8G0NEtFEQ" targetItem="_orpY0KRMEea9H8G0NEtFEQ" sourceItem="_oroKsKRMEea9H8G0NEtFEQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orLewKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orLewaRMEea9H8G0NEtFEQ" text="An Exception for problems in the TDA's data model section.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_orMs4KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK8KRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orPJIKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orPJIaRMEea9H8G0NEtFEQ" text="Represents a counter for all {@link Outcome}s of a {@link TestRun}.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_orQ-UKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK8aRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orPJIqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orPwMKRMEea9H8G0NEtFEQ" text="Creates a new {@code TestOutcomeCounter}.&#xA;&#x9; * &#xA;&#x9; * @param totalTests&#xA;&#x9; *            the number of total tests. Mustn't be below one.&#xA;&#x9; * @param executedTests&#xA;&#x9; *            the number of executed tests. Mustn't be below zero.&#xA;&#x9; * @param passedTests&#xA;&#x9; *            the number of passed tests. Mustn't be below zero.&#xA;&#x9; * @param failedTests&#xA;&#x9; *            the number of failed tests. Mustn't be below zero.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if any of the arguments is not valid." item="_orQ-Z6RMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK8qRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orPwMaRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orPwMqRMEea9H8G0NEtFEQ" text="Getter for the total number of {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the total number of {@link UnitTest}s." item="_orQ-eaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK86RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orPwM6RMEea9H8G0NEtFEQ" sourceConnectionVisual="_orPwNKRMEea9H8G0NEtFEQ" text="Getter for the number of executed {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the number of executed {@link UnitTest}s." item="_orQ-fqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK9KRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orPwNaRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orQXQKRMEea9H8G0NEtFEQ" text="Getter for the number of passed {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the number of passed {@link UnitTest}s." item="_orQ-g6RMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK9aRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orQXQaRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orQXQqRMEea9H8G0NEtFEQ" text="Getter for the number of failed {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the number of failed {@link UnitTest}s." item="_orQ-iKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK9qRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orUBoaRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orUBoqRMEea9H8G0NEtFEQ" text="Represents a test run.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_orZhOaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK96RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orVPwKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orVPwaRMEea9H8G0NEtFEQ" text="Parses a {@link String} in form of &quot;2016-09-21T13:37:43.7071946+02:00&quot; to&#xA;&#x9; * a {@link Date}.&#xA;&#x9; * &#xA;&#x9; * @param dateAsString&#xA;&#x9; *            the date as {@link String}.&#xA;&#x9; * @return the date as {@link LocalDateTime}.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if a problem occurs while parsing the date." item="_orZhVaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK-aRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orVPwqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orVPw6RMEea9H8G0NEtFEQ" text="Getter for the {@code TestRun}'s ID.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestRun}'s ID." item="_orZhXaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK-qRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orVPxKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orVPxaRMEea9H8G0NEtFEQ" text="Getter for the {@code TestRun}'s creation date.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestRun}'s creation date." item="_orZhYqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK-6RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orV20KRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orV20aRMEea9H8G0NEtFEQ" text="Getter for the {@code TestRun}'s overall outcome.&#xA;&#x9; * &#xA;&#x9; * @return {@code true} if no {@link UnitTest} failed, otherwise&#xA;&#x9; *         {@code false}." item="_orZhZ6RMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK_KRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orV20qRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orV206RMEea9H8G0NEtFEQ" text="Getter for the list of the {@code TestRun}'s {@link TestedClass}'.&#xA;&#x9; * &#xA;&#x9; * @return the list of the {@code TestRun}'s {@link TestedClass}'." item="_orZhbKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyAKRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orV21KRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orV21aRMEea9H8G0NEtFEQ" text="Getter for a specific class of the TestRun.&#xA;&#x9; * &#xA;&#x9; * @param name&#xA;&#x9; *            the name of the class.&#xA;&#x9; * @return the class with the respective name, if the class wasn't found,&#xA;&#x9; *         {@code null} will be returned.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if the class is not found." item="_orZhcaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyAaRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orWd4KRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orWd4aRMEea9H8G0NEtFEQ" text="Getter for the {@code TestRun}'s counter, which counts the quantity of&#xA;&#x9; * the different {@link Outcome}s of all {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestRun}'s counter." item="_orZheaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyAqRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orWd4qRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orWd46RMEea9H8G0NEtFEQ" text="Creates a new {@code TestRun}.&#xA;&#x9; * &#xA;&#x9; * @param id&#xA;&#x9; *            the {@code TestRun}'s ID. Mustn't be null or empty.&#xA;&#x9; * @param creationDate&#xA;&#x9; *            the {@code TestRun}'s creation date in the form&#xA;&#x9; *            &quot;2016-09-21T13:37:43.7071946+02:00&quot;.&#xA;&#x9; * @param outcome&#xA;&#x9; *            the {@code TestRun}'s outcome. Mustn't be null.&#xA;&#x9; * @param classList&#xA;&#x9; *            the {@code TestRun}'s list of tested classes. Mustn't be null&#xA;&#x9; *            or empty.&#xA;&#x9; * @param totalTests&#xA;&#x9; *            the {@code TestRun}'s number of total tests. Mustn't be below&#xA;&#x9; *            one.&#xA;&#x9; * @param executedTests&#xA;&#x9; *            the {@code TestRun}'s number of executed tests. Mustn't be&#xA;&#x9; *            below zero.&#xA;&#x9; * @param passedTests&#xA;&#x9; *            the {@code TestRun}'s number of passed tests. Mustn't be below&#xA;&#x9; *            zero.&#xA;&#x9; * @param failedTests&#xA;&#x9; *            the {@code TestRun}'s number of failed tests. Mustn't be below&#xA;&#x9; *            zero.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if any of the arguments is not valid." item="_orZhfqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoK-KRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ordyoKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_ordyoaRMEea9H8G0NEtFEQ" text="Represents a class which is tested by a number of {@link UnitTest}s.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_org18KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyA6RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oreZsKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_oreZsaRMEea9H8G0NEtFEQ" text="Calculator for the failure percentage of the {@code TestedClass}.&#xA;&#x9; * &#xA;&#x9; * @return the failure percentage of the {@code TestedClass}." item="_org2AqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyBaRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oreZsqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_oreZs6RMEea9H8G0NEtFEQ" text="Getter for the {@code TestedClass}' name.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestedClass}' name." item="_org2B6RMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyBqRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orfAwKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orfAwaRMEea9H8G0NEtFEQ" text="Getter for the {@code TestedClass}' list of {@link UnitTest}s.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestedClass}' list of {@link UnitTest}s." item="_org2DKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyB6RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orfAwqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orfAw6RMEea9H8G0NEtFEQ" text="Getter for the {@code TestedClass}' failure percentage.&#xA;&#x9; * &#xA;&#x9; * @return the {@code TestedClass}' failure percentage rounded to two&#xA;&#x9; *         decimal places." item="_org2EaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyCKRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orfAxKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orfAxaRMEea9H8G0NEtFEQ" text="Creates a new {@code TestedClass}.&#xA;&#x9; * &#xA;&#x9; * @param name&#xA;&#x9; *            the {@code TestedClass}' name. Mustn't be null or empty.&#xA;&#x9; * @param testList&#xA;&#x9; *            the {@code TestedClass}' list of {@link UnitTest}s. Mustn't be&#xA;&#x9; *            null or empty.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if any of the arguments is not valid." item="_org2FqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyBKRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orjSMKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orjSMaRMEea9H8G0NEtFEQ" text="Represents an unit test.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_orlucKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyCaRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orj5QKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orj5QaRMEea9H8G0NEtFEQ" text="Creates a new unexecuted {@code UnitTest}. The outcome is set on&#xA;&#x9; * {@code null}.&#xA;&#x9; * &#xA;&#x9; * @param id&#xA;&#x9; *            the {@code UnitTest}'s ID. Mustn't be null or empty.&#xA;&#x9; * @param name&#xA;&#x9; *            the {@code UnitTest}'s name. Mustn't be null or empty.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if any of the arguments is not valid." item="_orlugqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyC6RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orj5QqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orj5Q6RMEea9H8G0NEtFEQ" text="Getter for the {@code UnitTest}'s ID.&#xA;&#x9; * &#xA;&#x9; * @return the {@code UnitTest}'s ID." item="_orlujqRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyDKRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orj5RKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orj5RaRMEea9H8G0NEtFEQ" text="Getter for the {@code UnitTest}'s name.&#xA;&#x9; * &#xA;&#x9; * @return the {@code UnitTest}'s name." item="_orluk6RMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyDaRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orkgUKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orkgUaRMEea9H8G0NEtFEQ" text="Getter for the {@code UnitTest}'s {@link Outcome}.&#xA;&#x9; * &#xA;&#x9; * @return the {@code UnitTest}'s {@link Outcome}." item="_orlumKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyDqRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_orkgUqRMEea9H8G0NEtFEQ" sourceConnectionVisual="_orkgU6RMEea9H8G0NEtFEQ" text="Creates a new executed {@code UnitTest}.&#xA;&#x9; * &#xA;&#x9; * @param id&#xA;&#x9; *            the {@code UnitTest}'s ID. Mustn't be null or empty.&#xA;&#x9; * @param name&#xA;&#x9; *            the {@code UnitTest}'s name. Mustn't be null or empty.&#xA;&#x9; * @param outcome&#xA;&#x9; *            the {@code UnitTest}'s outcome. Mustn't be null.&#xA;&#x9; * @throws TdaDataModelException&#xA;&#x9; *             if any of the arguments is not valid." item="_orlunaRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyCqRMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oroKsKRMEea9H8G0NEtFEQ" sourceConnectionVisual="_oroKsaRMEea9H8G0NEtFEQ" text="Validation class for the logic package.&#xA;&#xA;@author Nicolas Gross&#xA; *" item="_orpY0KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_odoyD6RMEea9H8G0NEtFEQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_orMs4KRMEea9H8G0NEtFEQ" comments="_orLewKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orLewaRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+    <modelElement href="swl-tda.uml#_och-wqRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orMs4aRMEea9H8G0NEtFEQ" position="-250.0,335.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_orMs4qRMEea9H8G0NEtFEQ" label="+"/>
+    <attributes xmi:id="_orMs46RMEea9H8G0NEtFEQ" defaultValue="6657067605074631600L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="swl-tda.uml#_odeZ8KRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orMs5KRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orMs5aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orMs5qRMEea9H8G0NEtFEQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_orMs56RMEea9H8G0NEtFEQ" name="TdaDataModelException">
+      <modelElement href="swl-tda.uml#_ocjM4KRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orMs6KRMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orMs6aRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orMs6qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orMs66RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocjM46RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orMs7KRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+          <modelElement href="swl-tda.uml#_och-wqRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orMs7aRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+      <modelElement href="swl-tda.uml#_ocjz8KRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orMs7qRMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orMs76RMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orMs8KRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orMs8aRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocjz9KRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orMs8qRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+          <modelElement href="swl-tda.uml#_och-wqRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orMs86RMEea9H8G0NEtFEQ" name="message">
+        <modelElement href="swl-tda.uml#_ocjz8aRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orMs9KRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orMs9aRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orMs9qRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+      <modelElement href="swl-tda.uml#_odXFMKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orMs96RMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orMs-KRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orMs-aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orMs-qRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odXFNKRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orMs-6RMEea9H8G0NEtFEQ" name="TdaDataModelException">
+          <modelElement href="swl-tda.uml#_och-wqRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orMs_KRMEea9H8G0NEtFEQ" name="cause">
+        <modelElement href="swl-tda.uml#_odXFMaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orMs_aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orMs_qRMEea9H8G0NEtFEQ" name="Throwable">
+          <modelElement href="swl-tda.uml#_odWeIKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orMs_6RMEea9H8G0NEtFEQ" name="TdaDataModelException">
+      <modelElement href="swl-tda.uml#_odXFNaRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orMtAKRMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orMtAaRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orMtAqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orMtA6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odXsQqRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orMtBKRMEea9H8G0NEtFEQ" name="TdaDataModelException">
+          <modelElement href="swl-tda.uml#_och-wqRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orMtBaRMEea9H8G0NEtFEQ" name="message">
+        <modelElement href="swl-tda.uml#_odXFNqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orMtBqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orMtB6RMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orMtCKRMEea9H8G0NEtFEQ" name="cause">
+        <modelElement href="swl-tda.uml#_odXFN6RMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orMtCaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orMtCqRMEea9H8G0NEtFEQ" name="Throwable">
+          <modelElement href="swl-tda.uml#_odWeIKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_orpY0KRMEea9H8G0NEtFEQ" comments="_oroKsKRMEea9H8G0NEtFEQ" targetConnectionVisual="_oroKsaRMEea9H8G0NEtFEQ" name="Validator">
+    <modelElement href="swl-tda.uml#_oc0SoKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orpY0aRMEea9H8G0NEtFEQ" position="-17.0,79.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_orpY0qRMEea9H8G0NEtFEQ" label="~"/>
+    <operations xmi:id="_orpY06RMEea9H8G0NEtFEQ" name="validateUnitTest" staticOperation="true">
+      <modelElement href="swl-tda.uml#_oc05sKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orpY1KRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orpY1aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_orpY1qRMEea9H8G0NEtFEQ" name="id">
+        <modelElement href="swl-tda.uml#_oc05saRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY16RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY2KRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY2aRMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_oc05sqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY2qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY26RMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orpY3KRMEea9H8G0NEtFEQ" name="validateCounterNumbers" staticOperation="true">
+      <modelElement href="swl-tda.uml#_oc1gwKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orpY3aRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orpY3qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_orpY36RMEea9H8G0NEtFEQ" name="totalTests">
+        <modelElement href="swl-tda.uml#_oc1gwaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY4KRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY4aRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY4qRMEea9H8G0NEtFEQ" name="executedTests">
+        <modelElement href="swl-tda.uml#_oc1gwqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY46RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY5KRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY5aRMEea9H8G0NEtFEQ" name="passedTests">
+        <modelElement href="swl-tda.uml#_oc2H0KRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY5qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY56RMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY6KRMEea9H8G0NEtFEQ" name="failedTests">
+        <modelElement href="swl-tda.uml#_oc2H0aRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY6aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY6qRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orpY66RMEea9H8G0NEtFEQ" name="validateTestedClass" staticOperation="true">
+      <modelElement href="swl-tda.uml#_odbWoaRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orpY7KRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orpY7aRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_orpY7qRMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_odb9sKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY76RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY8KRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY8aRMEea9H8G0NEtFEQ" name="testList">
+        <modelElement href="swl-tda.uml#_odb9saRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY8qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY86RMEea9H8G0NEtFEQ" name="List">
+          <modelElement href="swl-tda.uml#_odPJYaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orpY9KRMEea9H8G0NEtFEQ" name="validateTestRun" staticOperation="true">
+      <modelElement href="swl-tda.uml#_odckwKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orpY9aRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orpY9qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_orpY96RMEea9H8G0NEtFEQ" name="id">
+        <modelElement href="swl-tda.uml#_odckwaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY-KRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY-aRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY-qRMEea9H8G0NEtFEQ" name="creationDate">
+        <modelElement href="swl-tda.uml#_odckwqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY-6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY_KRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpY_aRMEea9H8G0NEtFEQ" name="outcome">
+        <modelElement href="swl-tda.uml#_odckw6RMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpY_qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpY_6RMEea9H8G0NEtFEQ" name="Outcome">
+          <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orpZAKRMEea9H8G0NEtFEQ" name="classList">
+        <modelElement href="swl-tda.uml#_odckxKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orpZAaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orpZAqRMEea9H8G0NEtFEQ" name="List">
+          <modelElement href="swl-tda.uml#_odPJYaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_orJpkKRMEea9H8G0NEtFEQ" name="Outcome">
+    <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orJpkaRMEea9H8G0NEtFEQ" position="-1066.0,677.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_orJpkqRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+      <modelElement href="swl-tda.uml#_ochXsKRMEea9H8G0NEtFEQ"/>
+    </stereotypes>
+    <visibility xmi:id="_orJpk6RMEea9H8G0NEtFEQ" label="+"/>
+    <literals xmi:id="_orJplKRMEea9H8G0NEtFEQ" name="PASSED">
+      <modelElement href="swl-tda.uml#_och-wKRMEea9H8G0NEtFEQ"/>
+    </literals>
+    <literals xmi:id="_orJplaRMEea9H8G0NEtFEQ" name="FAILED">
+      <modelElement href="swl-tda.uml#_och-waRMEea9H8G0NEtFEQ"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_orQ-UKRMEea9H8G0NEtFEQ" comments="_orPJIKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orPJIaRMEea9H8G0NEtFEQ" name="TestOutcomeCounter" associationsIn="_orUBoKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_oclCEKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orQ-UaRMEea9H8G0NEtFEQ" position="-1264.0,105.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_orQ-UqRMEea9H8G0NEtFEQ" label="+"/>
+    <attributes xmi:id="_orQ-U6RMEea9H8G0NEtFEQ" name="TOTAL_TESTS">
+      <modelElement href="swl-tda.uml#_odeZ8qRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orQ-VKRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odfBAKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orQ-VaRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orQ-VqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orQ-V6RMEea9H8G0NEtFEQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orQ-WKRMEea9H8G0NEtFEQ" name="EXECUTED_TESTS">
+      <modelElement href="swl-tda.uml#_odfBAaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orQ-WaRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odfoEKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orQ-WqRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orQ-W6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orQ-XKRMEea9H8G0NEtFEQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orQ-XaRMEea9H8G0NEtFEQ" name="PASSED_TESTS">
+      <modelElement href="swl-tda.uml#_odfoEaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orQ-XqRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odfoEqRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orQ-X6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orQ-YKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orQ-YaRMEea9H8G0NEtFEQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orQ-YqRMEea9H8G0NEtFEQ" name="FAILED_TESTS">
+      <modelElement href="swl-tda.uml#_odfoE6RMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orQ-Y6RMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odgPIKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orQ-ZKRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orQ-ZaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orQ-ZqRMEea9H8G0NEtFEQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_orQ-Z6RMEea9H8G0NEtFEQ" comments="_orPJIqRMEea9H8G0NEtFEQ" targetConnectionVisual="_orPwMKRMEea9H8G0NEtFEQ" name="TestOutcomeCounter">
+      <modelElement href="swl-tda.uml#_ocmQMKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orQ-aKRMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orQ-aaRMEea9H8G0NEtFEQ" label="~"/>
+      <cardinality xmi:id="_orQ-aqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orQ-a6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocmQN6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orQ-bKRMEea9H8G0NEtFEQ" name="TestOutcomeCounter">
+          <modelElement href="swl-tda.uml#_oclCEKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orQ-baRMEea9H8G0NEtFEQ" name="totalTests">
+        <modelElement href="swl-tda.uml#_ocmQMaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orQ-bqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orQ-b6RMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orQ-cKRMEea9H8G0NEtFEQ" name="executedTests">
+        <modelElement href="swl-tda.uml#_ocmQMqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orQ-caRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orQ-cqRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orQ-c6RMEea9H8G0NEtFEQ" name="passedTests">
+        <modelElement href="swl-tda.uml#_ocmQM6RMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orQ-dKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orQ-daRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orQ-dqRMEea9H8G0NEtFEQ" name="failedTests">
+        <modelElement href="swl-tda.uml#_ocmQNKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orQ-d6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orQ-eKRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orQ-eaRMEea9H8G0NEtFEQ" comments="_orPwMaRMEea9H8G0NEtFEQ" targetConnectionVisual="_orPwMqRMEea9H8G0NEtFEQ" name="getTotalTests">
+      <modelElement href="swl-tda.uml#_ocm3QKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orQ-eqRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orQ-e6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orQ-fKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocm3QaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orQ-faRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orQ-fqRMEea9H8G0NEtFEQ" comments="_orPwM6RMEea9H8G0NEtFEQ" targetConnectionVisual="_orPwNKRMEea9H8G0NEtFEQ" name="getExecutedTests">
+      <modelElement href="swl-tda.uml#_ocm3QqRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orQ-f6RMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orQ-gKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orQ-gaRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocm3Q6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orQ-gqRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orQ-g6RMEea9H8G0NEtFEQ" comments="_orPwNaRMEea9H8G0NEtFEQ" targetConnectionVisual="_orQXQKRMEea9H8G0NEtFEQ" name="getPassedTests">
+      <modelElement href="swl-tda.uml#_ocneUKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orQ-hKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orQ-haRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orQ-hqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocneUaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orQ-h6RMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orQ-iKRMEea9H8G0NEtFEQ" comments="_orQXQaRMEea9H8G0NEtFEQ" targetConnectionVisual="_orQXQqRMEea9H8G0NEtFEQ" name="getFailedTests">
+      <modelElement href="swl-tda.uml#_ocneUqRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orQ-iaRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orQ-iqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orQ-i6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocneU6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orQ-jKRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_orZhOaRMEea9H8G0NEtFEQ" comments="_orUBoaRMEea9H8G0NEtFEQ" targetConnectionVisual="_orUBoqRMEea9H8G0NEtFEQ" name="TestRun" associationsOut="_orUBoKRMEea9H8G0NEtFEQ _orY6IKRMEea9H8G0NEtFEQ _orZhMKRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_ocoscKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orZhOqRMEea9H8G0NEtFEQ" position="-585.0,592.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_orZhO6RMEea9H8G0NEtFEQ" label="+"/>
+    <attributes xmi:id="_orZhPKRMEea9H8G0NEtFEQ" name="ID">
+      <modelElement href="swl-tda.uml#_odgPIaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orZhPaRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odg2MKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orZhPqRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhP6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orZhQKRMEea9H8G0NEtFEQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orZhQaRMEea9H8G0NEtFEQ" name="CREATION_DATE">
+      <modelElement href="swl-tda.uml#_odg2MaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orZhQqRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odg2MqRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orZhQ6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhRKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orZhRaRMEea9H8G0NEtFEQ" name="LocalDateTime">
+        <modelElement href="swl-tda.uml#_odN7QaRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orZhRqRMEea9H8G0NEtFEQ" name="OUTCOME">
+      <modelElement href="swl-tda.uml#_odg2M6RMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orZhR6RMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odhdQKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orZhSKRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhSaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orZhSqRMEea9H8G0NEtFEQ" name="Outcome">
+        <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orZhS6RMEea9H8G0NEtFEQ" name="CLASS_LIST">
+      <modelElement href="swl-tda.uml#_odhdQaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orZhTKRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odhdQ6RMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orZhTaRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhTqRMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_orZhT6RMEea9H8G0NEtFEQ" name="TestedClass">
+        <modelElement href="swl-tda.uml#_ocuzEKRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orZhUKRMEea9H8G0NEtFEQ" name="COUNTER">
+      <modelElement href="swl-tda.uml#_odhdRKRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orZhUaRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odiEUKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orZhUqRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhU6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orZhVKRMEea9H8G0NEtFEQ" name="TestOutcomeCounter">
+        <modelElement href="swl-tda.uml#_oclCEKRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_orZhVaRMEea9H8G0NEtFEQ" comments="_orVPwKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orVPwaRMEea9H8G0NEtFEQ" name="stringToDate">
+      <modelElement href="swl-tda.uml#_ocp6kKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhVqRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orZhV6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhWKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odZhcaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhWaRMEea9H8G0NEtFEQ" name="LocalDateTime">
+          <modelElement href="swl-tda.uml#_odN7QaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orZhWqRMEea9H8G0NEtFEQ" name="dateAsString">
+        <modelElement href="swl-tda.uml#_ocp6kaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhW6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhXKRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orZhXaRMEea9H8G0NEtFEQ" comments="_orVPwqRMEea9H8G0NEtFEQ" targetConnectionVisual="_orVPw6RMEea9H8G0NEtFEQ" name="getId">
+      <modelElement href="swl-tda.uml#_ocqhoKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhXqRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhX6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhYKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocqhoaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhYaRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orZhYqRMEea9H8G0NEtFEQ" comments="_orVPxKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orVPxaRMEea9H8G0NEtFEQ" name="getCreationDate">
+      <modelElement href="swl-tda.uml#_ocqhoqRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhY6RMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhZKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhZaRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odZhcqRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhZqRMEea9H8G0NEtFEQ" name="LocalDateTime">
+          <modelElement href="swl-tda.uml#_odN7QaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orZhZ6RMEea9H8G0NEtFEQ" comments="_orV20KRMEea9H8G0NEtFEQ" targetConnectionVisual="_orV20aRMEea9H8G0NEtFEQ" name="getOutcome">
+      <modelElement href="swl-tda.uml#_ocqho6RMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhaKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhaaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhaqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odPwcKRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZha6RMEea9H8G0NEtFEQ" name="Outcome">
+          <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orZhbKRMEea9H8G0NEtFEQ" comments="_orV20qRMEea9H8G0NEtFEQ" targetConnectionVisual="_orV206RMEea9H8G0NEtFEQ" name="getCLassList">
+      <modelElement href="swl-tda.uml#_ocrIsKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhbaRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhbqRMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_orZhb6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocrIsaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhcKRMEea9H8G0NEtFEQ" name="TestedClass">
+          <modelElement href="swl-tda.uml#_ocuzEKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orZhcaRMEea9H8G0NEtFEQ" comments="_orV21KRMEea9H8G0NEtFEQ" targetConnectionVisual="_orV21aRMEea9H8G0NEtFEQ" name="getTestedClass">
+      <modelElement href="swl-tda.uml#_ocrvwKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZhcqRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhc6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhdKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odQXgKRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhdaRMEea9H8G0NEtFEQ" name="TestedClass">
+          <modelElement href="swl-tda.uml#_ocuzEKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orZhdqRMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_ocrvwaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhd6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZheKRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orZheaRMEea9H8G0NEtFEQ" comments="_orWd4KRMEea9H8G0NEtFEQ" targetConnectionVisual="_orWd4aRMEea9H8G0NEtFEQ" name="getCounter">
+      <modelElement href="swl-tda.uml#_ocsW0KRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orZheqRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhe6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhfKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odQXgaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhfaRMEea9H8G0NEtFEQ" name="TestOutcomeCounter">
+          <modelElement href="swl-tda.uml#_oclCEKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orZhfqRMEea9H8G0NEtFEQ" comments="_orWd4qRMEea9H8G0NEtFEQ" targetConnectionVisual="_orWd46RMEea9H8G0NEtFEQ" name="TestRun">
+      <modelElement href="swl-tda.uml#_odYTUKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orZhf6RMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orZhgKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orZhgaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orZhgqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odY6Z6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orZhg6RMEea9H8G0NEtFEQ" name="TestRun">
+          <modelElement href="swl-tda.uml#_ocoscKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orZhhKRMEea9H8G0NEtFEQ" name="id">
+        <modelElement href="swl-tda.uml#_odYTUaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhhaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhhqRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orZhh6RMEea9H8G0NEtFEQ" name="creationDate">
+        <modelElement href="swl-tda.uml#_odYTUqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhiKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhiaRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orZhiqRMEea9H8G0NEtFEQ" name="outcome">
+        <modelElement href="swl-tda.uml#_odYTU6RMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhi6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhjKRMEea9H8G0NEtFEQ" name="Outcome">
+          <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orZhjaRMEea9H8G0NEtFEQ" name="classList">
+        <modelElement href="swl-tda.uml#_odY6YKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhjqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhj6RMEea9H8G0NEtFEQ" name="List">
+          <modelElement href="swl-tda.uml#_odPJYaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orZhkKRMEea9H8G0NEtFEQ" name="totalTests">
+        <modelElement href="swl-tda.uml#_odY6YaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhkaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhkqRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orZhk6RMEea9H8G0NEtFEQ" name="executedTests">
+        <modelElement href="swl-tda.uml#_odY6YqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orZhlKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orZhlaRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oraIQKRMEea9H8G0NEtFEQ" name="passedTests">
+        <modelElement href="swl-tda.uml#_odY6Y6RMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_oraIQaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_oraIQqRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oraIQ6RMEea9H8G0NEtFEQ" name="failedTests">
+        <modelElement href="swl-tda.uml#_odY6ZKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_oraIRKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_oraIRaRMEea9H8G0NEtFEQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_org18KRMEea9H8G0NEtFEQ" comments="_ordyoKRMEea9H8G0NEtFEQ" targetConnectionVisual="_ordyoaRMEea9H8G0NEtFEQ" name="TestedClass" associationsIn="_orZhMKRMEea9H8G0NEtFEQ" associationsOut="_orgO4KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_ocuzEKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_org18aRMEea9H8G0NEtFEQ" position="776.0,338.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_org18qRMEea9H8G0NEtFEQ" label="+"/>
+    <attributes xmi:id="_org186RMEea9H8G0NEtFEQ" name="NAME">
+      <modelElement href="swl-tda.uml#_odiEUaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_org19KRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odirYKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_org19aRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_org19qRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_org196RMEea9H8G0NEtFEQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_org1-KRMEea9H8G0NEtFEQ" name="TEST_LIST">
+      <modelElement href="swl-tda.uml#_odirYaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_org1-aRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odirY6RMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_org1-qRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_org1-6RMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_org1_KRMEea9H8G0NEtFEQ" name="UnitTest">
+        <modelElement href="swl-tda.uml#_ocxPUKRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_org1_aRMEea9H8G0NEtFEQ" name="FAILURE_PERCENTAGE">
+      <modelElement href="swl-tda.uml#_odirZKRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_org1_qRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odjScKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_org1_6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_org2AKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_org2AaRMEea9H8G0NEtFEQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_org2AqRMEea9H8G0NEtFEQ" comments="_oreZsKRMEea9H8G0NEtFEQ" targetConnectionVisual="_oreZsaRMEea9H8G0NEtFEQ" name="calcFailurePercentage">
+      <modelElement href="swl-tda.uml#_ocvaIKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_org2A6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_org2BKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_org2BaRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocvaIaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_org2BqRMEea9H8G0NEtFEQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_org2B6RMEea9H8G0NEtFEQ" comments="_oreZsqRMEea9H8G0NEtFEQ" targetConnectionVisual="_oreZs6RMEea9H8G0NEtFEQ" name="getName">
+      <modelElement href="swl-tda.uml#_ocwBMKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_org2CKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_org2CaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_org2CqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocwBMaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_org2C6RMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_org2DKRMEea9H8G0NEtFEQ" comments="_orfAwKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orfAwaRMEea9H8G0NEtFEQ" name="getTestList">
+      <modelElement href="swl-tda.uml#_ocwBMqRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_org2DaRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_org2DqRMEea9H8G0NEtFEQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_org2D6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocwBM6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_org2EKRMEea9H8G0NEtFEQ" name="UnitTest">
+          <modelElement href="swl-tda.uml#_ocxPUKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_org2EaRMEea9H8G0NEtFEQ" comments="_orfAwqRMEea9H8G0NEtFEQ" targetConnectionVisual="_orfAw6RMEea9H8G0NEtFEQ" name="getFailurePercentage">
+      <modelElement href="swl-tda.uml#_ocwBNaRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_org2EqRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_org2E6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_org2FKRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocwBNqRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_org2FaRMEea9H8G0NEtFEQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_org2FqRMEea9H8G0NEtFEQ" comments="_orfAxKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orfAxaRMEea9H8G0NEtFEQ" name="TestedClass">
+      <modelElement href="swl-tda.uml#_odavkKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_org2F6RMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_org2GKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_org2GaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_org2GqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odavlaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_org2G6RMEea9H8G0NEtFEQ" name="TestedClass">
+          <modelElement href="swl-tda.uml#_ocuzEKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_org2HKRMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_odavkaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_org2HaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_org2HqRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_org2H6RMEea9H8G0NEtFEQ" name="testList">
+        <modelElement href="swl-tda.uml#_odavkqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_org2IKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_org2IaRMEea9H8G0NEtFEQ" name="List">
+          <modelElement href="swl-tda.uml#_odPJYaRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_orlucKRMEea9H8G0NEtFEQ" comments="_orjSMKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orjSMaRMEea9H8G0NEtFEQ" name="UnitTest" associationsIn="_orgO4KRMEea9H8G0NEtFEQ">
+    <modelElement href="swl-tda.uml#_ocxPUKRMEea9H8G0NEtFEQ"/>
+    <visualProperties xmi:id="_orlucaRMEea9H8G0NEtFEQ" position="1358.0,89.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_orlucqRMEea9H8G0NEtFEQ" label="+"/>
+    <attributes xmi:id="_orluc6RMEea9H8G0NEtFEQ" name="ID">
+      <modelElement href="swl-tda.uml#_odjScaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orludKRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odjScqRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orludaRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orludqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orlud6RMEea9H8G0NEtFEQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orlueKRMEea9H8G0NEtFEQ" name="NAME">
+      <modelElement href="swl-tda.uml#_odjSc6RMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orlueaRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odj5gKRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orlueqRMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orlue6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orlufKRMEea9H8G0NEtFEQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_orlufaRMEea9H8G0NEtFEQ" name="OUTCOME">
+      <modelElement href="swl-tda.uml#_odj5gaRMEea9H8G0NEtFEQ"/>
+      <stereotypes xmi:id="_orlufqRMEea9H8G0NEtFEQ" name="LegacyStyledElement">
+        <modelElement href="swl-tda.uml#_odj5gqRMEea9H8G0NEtFEQ"/>
+      </stereotypes>
+      <visibility xmi:id="_orluf6RMEea9H8G0NEtFEQ" label="-"/>
+      <cardinality xmi:id="_orlugKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <type xmi:id="_orlugaRMEea9H8G0NEtFEQ" name="Outcome">
+        <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_orlugqRMEea9H8G0NEtFEQ" comments="_orj5QKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orj5QaRMEea9H8G0NEtFEQ" name="UnitTest">
+      <modelElement href="swl-tda.uml#_ocydcKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orlug6RMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orluhKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orluhaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orluhqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_ocyddaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orluh6RMEea9H8G0NEtFEQ" name="UnitTest">
+          <modelElement href="swl-tda.uml#_ocxPUKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orluiKRMEea9H8G0NEtFEQ" name="id">
+        <modelElement href="swl-tda.uml#_ocydcaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orluiaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orluiqRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orlui6RMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_ocydcqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orlujKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orlujaRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_orlujqRMEea9H8G0NEtFEQ" comments="_orj5QqRMEea9H8G0NEtFEQ" targetConnectionVisual="_orj5Q6RMEea9H8G0NEtFEQ" name="getId">
+      <modelElement href="swl-tda.uml#_oczEgKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orluj6RMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orlukKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orlukaRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_oczEgaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orlukqRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orluk6RMEea9H8G0NEtFEQ" comments="_orj5RKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orj5RaRMEea9H8G0NEtFEQ" name="getName">
+      <modelElement href="swl-tda.uml#_oczEgqRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orlulKRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orlulaRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orlulqRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_oczEg6RMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orlul6RMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orlumKRMEea9H8G0NEtFEQ" comments="_orkgUKRMEea9H8G0NEtFEQ" targetConnectionVisual="_orkgUaRMEea9H8G0NEtFEQ" name="getOutcome">
+      <modelElement href="swl-tda.uml#_oczEhKRMEea9H8G0NEtFEQ"/>
+      <visibility xmi:id="_orlumaRMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orlumqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orlum6RMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odSzxqRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orlunKRMEea9H8G0NEtFEQ" name="Outcome">
+          <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_orlunaRMEea9H8G0NEtFEQ" comments="_orkgUqRMEea9H8G0NEtFEQ" targetConnectionVisual="_orkgU6RMEea9H8G0NEtFEQ" name="UnitTest">
+      <modelElement href="swl-tda.uml#_odSMsKRMEea9H8G0NEtFEQ"/>
+      <keywords xmi:id="_orlunqRMEea9H8G0NEtFEQ" keyword="create"/>
+      <visibility xmi:id="_orlun6RMEea9H8G0NEtFEQ" label="+"/>
+      <cardinality xmi:id="_orluoKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_orluoaRMEea9H8G0NEtFEQ">
+        <modelElement href="swl-tda.uml#_odSzxaRMEea9H8G0NEtFEQ"/>
+        <type xmi:id="_orluoqRMEea9H8G0NEtFEQ" name="UnitTest">
+          <modelElement href="swl-tda.uml#_ocxPUKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_orluo6RMEea9H8G0NEtFEQ" name="id">
+        <modelElement href="swl-tda.uml#_odSzwKRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orlupKRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orlupaRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orlupqRMEea9H8G0NEtFEQ" name="name">
+        <modelElement href="swl-tda.uml#_odSzwaRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orlup6RMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orluqKRMEea9H8G0NEtFEQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_orluqaRMEea9H8G0NEtFEQ" name="outcome">
+        <modelElement href="swl-tda.uml#_odSzwqRMEea9H8G0NEtFEQ"/>
+        <cardinality xmi:id="_orluqqRMEea9H8G0NEtFEQ" label="1" max="1" min="1"/>
+        <type xmi:id="_orluq6RMEea9H8G0NEtFEQ" name="Outcome">
+          <modelElement href="swl-tda.uml#_ocgwoKRMEea9H8G0NEtFEQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
