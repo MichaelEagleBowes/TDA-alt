@@ -1,4 +1,4 @@
-package de.uni_bamberg.swl.tda.parser;
+package de.uni_bamberg.swl.tda.logic.parser;
 
 import de.uni_bamberg.swl.tda.logic.TestRun;
 
@@ -26,7 +26,7 @@ public class Parser {
      * @param file the file to parse.
      * @return the parsed {@link TestRun}.
      * @throws FileNotFoundException Signals that the given file could not be found.
-     * @throws ParserException Signals that an error occurred while parsing.
+     * @throws ParserException       Signals that an error occurred while parsing.
      * @see #parse(InputStream)
      */
     public static TestRun parse(File file) throws FileNotFoundException, ParserException {

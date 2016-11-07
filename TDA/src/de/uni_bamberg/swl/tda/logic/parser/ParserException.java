@@ -1,4 +1,4 @@
-package de.uni_bamberg.swl.tda.parser;
+package de.uni_bamberg.swl.tda.logic.parser;
 
 /**
  * Signals an error while parsing XML test run files.

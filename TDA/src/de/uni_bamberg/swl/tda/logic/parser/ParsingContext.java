@@ -1,4 +1,4 @@
-package de.uni_bamberg.swl.tda.parser;
+package de.uni_bamberg.swl.tda.logic.parser;
 
 import de.uni_bamberg.swl.tda.logic.TestRun;
 
@@ -36,7 +36,7 @@ interface ParsingContext {
      *
      * @return the parsed {@link TestRun}
      * @throws IllegalStateException Signals that the parser is currently not in a state to return
-     *         any useful result.
+     *                               any useful result.
      */
     TestRun getResult() throws IllegalStateException;
 }
