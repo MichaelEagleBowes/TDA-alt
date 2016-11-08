@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Tab text="Classname" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uni_bamberg.swl.tda.gui.Controller">
+   <content>
+      <AnchorPane>
+         <children>
+            <LineChart layoutX="69.0" layoutY="48.0" prefHeight="363.0" prefWidth="774.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="48.0">
+               <xAxis>
+                  <NumberAxis autoRanging="false" label="Testruns" lowerBound="1.0" minorTickCount="0" minorTickLength="0.0" tickLength="3.0" tickUnit="1.0" upperBound="5.0" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis autoRanging="false" label="Failure Percentage" prefHeight="324.0" prefWidth="52.0" side="LEFT" tickUnit="10.0" />
+               </yAxis>
+            </LineChart>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="46.0" prefWidth="766.0" text="Classname" textAlignment="CENTER" underline="true" />
+         </children>
+      </AnchorPane>
+   </content>
+</Tab>
