@@ -24,7 +24,7 @@ public class TestedClass {
 	 *            the {@code TestedClass}' list of {@link UnitTest}s. Mustn't be
 	 *            null or empty.
 	 * @throws TdaDataModelException
-	 *             if any of the arguments is not valid.
+	 *             if any of the parameters is not valid.
 	 */
 	public TestedClass(String name, List<UnitTest> testList) throws TdaDataModelException {
 		super();
@@ -44,7 +44,7 @@ public class TestedClass {
 		double total = testList.size();
 
 		for (UnitTest unitTest : testList) {
-			if (unitTest.getOutcome() == Outcome.FAILED) {
+			if (unitTest.getResult().getOutcome() == Outcome.FAILED) {
 				failed++;
 			}
 		}

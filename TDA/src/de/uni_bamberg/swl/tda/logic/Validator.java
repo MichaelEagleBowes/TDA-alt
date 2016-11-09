@@ -11,31 +11,73 @@ import java.util.List;
 
 class Validator {
 
-	static void validateUnitTest(String id, String name) throws TdaDataModelException {
-		if (id == null || name == null || id.isEmpty() || name.isEmpty()) {
-			throw new TdaDataModelException("The ID and name of an UnitTest can't be null or left empty.");
+	static void validateUnitTest(String id, String name, String storage, String adapterTypeName, String codeBase,
+			UnitTestResult result) throws TdaDataModelException {
+		if (id == null || name == null || storage == null || adapterTypeName == null || codeBase == null
+				|| result == null) {
+			throw new TdaDataModelException("The parameters of an UnitTest mustn't be null.");
+		} else if (id.isEmpty() || name.isEmpty() || storage.isEmpty() || adapterTypeName.isEmpty()
+				|| codeBase.isEmpty()) {
+			throw new TdaDataModelException("The parameters of an UnitTest mustn't be empty.");
 		}
+	}
+
+	static void validateUnitTestResult(String executionId, String computerName, String dataRowInfo, String duration,
+			String endTime, Outcome outcome, String relativeResultsDirectory, String startTime, String testListId,
+			String testType, String output) throws TdaDataModelException {
+		if (executionId == null || computerName == null || dataRowInfo == null || duration == null || endTime == null
+				|| outcome == null || relativeResultsDirectory == null || startTime == null || testListId == null
+				|| testType == null || output == null) {
+			throw new TdaDataModelException("The parameters of an UnitTestResult mustn't be null.");
+		} else if (executionId.isEmpty() || computerName.isEmpty() || dataRowInfo.isEmpty()
+				|| relativeResultsDirectory.isEmpty() || testListId.isEmpty() || testType.isEmpty()) {
+			throw new TdaDataModelException("The parameters of an UnitTestResult mustn't be empty.");
+		}
+
 	}
 
 	static void validateTestedClass(String name, List<UnitTest> testList) throws TdaDataModelException {
-		if (name == null || testList == null || name.isEmpty() || testList.isEmpty()) {
-			throw new TdaDataModelException("The name and test list of a TestedClass can't be null or left empty.");
+		if (name == null || testList == null) {
+			throw new TdaDataModelException("The name and test list of a TestedClass mustn't be null.");
+		} else if (name.isEmpty() || testList.isEmpty()) {
+			throw new TdaDataModelException("The name and test list of a TestedClass mustn't be left empty.");
 		}
 	}
 
-	static void validateTestRun(String id, String creationDate, Outcome outcome, List<TestedClass> classList)
-			throws TdaDataModelException {
-		if (id == null || creationDate == null || outcome == null || classList == null || id.isEmpty()
-				|| creationDate.isEmpty() || classList.isEmpty()) {
-			throw new TdaDataModelException("The arguments can't be null or left empty.");
-		}
-	}
-
-	static void validateCounterNumbers(int totalTests, int executedTests, int passedTests, int failedTests)
-			throws TdaDataModelException {
-		if (totalTests < 1 || executedTests < 0 || passedTests < 0 || failedTests < 0) {
+	static void validateTestRunResult(Outcome outcome, int aborted, int completed, int disconnected, int error,
+			int executed, int failed, int inProgress, int inconclusive, int notExecuted, int notRunnable, int passed,
+			int passedButRunAborted, int pending, int timeout, int total, int warning) throws TdaDataModelException {
+		if (outcome == null) {
+			throw new TdaDataModelException("The outcome of a TestRunResult mustn't be null.");
+		} else if (total < 1 || aborted < 0 || completed < 0 || disconnected < 0 || error < 0 || executed < 0
+				|| failed < 0 || inProgress < 0 || inconclusive < 0 || notExecuted < 0 || notRunnable < 0 || passed < 0
+				|| passedButRunAborted < 0 || pending < 0 || timeout < 0 || warning < 0) {
 			throw new TdaDataModelException(
-					"The total number of tests has to be greater than 0 and the other numbers mustn't be below zero.");
+					"The parameters of a TestRunResult mustn't be below zero. The total number of tests mustn't be below 1.");
+		}
+	}
+
+	static void validateTestRunSetting(String id, String name, String runDeploymentRoot,
+			boolean useDefaultDeploymentRoot, String userDeploymentRoot, String agentRuleName)
+			throws TdaDataModelException {
+		if (id == null || name == null || runDeploymentRoot == null || userDeploymentRoot == null
+				|| agentRuleName == null) {
+			throw new TdaDataModelException("The parameters of a TestRunSetting mustn't be null.");
+		} else if (id.isEmpty() || name.isEmpty() || runDeploymentRoot.isEmpty() || userDeploymentRoot.isEmpty()
+				|| agentRuleName.isEmpty()) {
+			throw new TdaDataModelException("The parameters of an TestRunSetting mustn't be empty.");
+		}
+	}
+
+	static void validateTestRun(String xmlns, String id, String name, String runUser, String creationDate,
+			String finishDate, String queuingDate, String startDate, List<TestedClass> classList,
+			TestRunSetting setting, TestRunResult result) throws TdaDataModelException {
+		if (xmlns == null || id == null || name == null || runUser == null || creationDate == null || finishDate == null
+				|| queuingDate == null || startDate == null || classList == null || setting == null || result == null) {
+			throw new TdaDataModelException("The parameters of a TestRun mustn't be null.");
+		} else if (xmlns.isEmpty() || id.isEmpty() || name.isEmpty() || runUser.isEmpty() || creationDate.isEmpty()
+				|| finishDate.isEmpty() || queuingDate.isEmpty() || startDate.isEmpty() || classList.isEmpty()) {
+			throw new TdaDataModelException("The parameters of a TestRun mustn't be empty.");
 		}
 	}
 }

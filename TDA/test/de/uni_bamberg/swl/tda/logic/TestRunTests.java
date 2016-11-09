@@ -2,9 +2,7 @@ package de.uni_bamberg.swl.tda.logic;
 
 import static org.junit.Assert.assertEquals;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,16 +20,36 @@ import org.junit.Test;
 public class TestRunTests {
 
 	private static TestRun testRun;
+	private static TestRunSetting setting;
+	private static TestRunResult result;
 	private static List<TestedClass> classList = new LinkedList<>();
 
 	@BeforeClass
 	public static void initializeTestClass() throws TdaDataModelException {
-		UnitTest unitTest1 = new UnitTest("1", "Eins", Outcome.PASSED);
-		UnitTest unitTest2 = new UnitTest("2", "Zwei", Outcome.PASSED);
-		UnitTest unitTest3 = new UnitTest("3", "Drei", Outcome.FAILED);
-		UnitTest unitTest4 = new UnitTest("4", "Vier", Outcome.PASSED);
-		UnitTest unitTest5 = new UnitTest("5", "Fuenf", Outcome.FAILED);
-		UnitTest unitTest6 = new UnitTest("6", "Sechs", Outcome.FAILED);
+		UnitTestResult result1 = new UnitTestResult("r01", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest1 = new UnitTest("test1", "unitTest", "storage", "adapter", "codeBase", result1);
+		UnitTestResult result2 = new UnitTestResult("r02", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest2 = new UnitTest("test2", "unitTest", "storage", "adapter", "codeBase", result2);
+		UnitTestResult result3 = new UnitTestResult("r03", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest3 = new UnitTest("test3", "unitTest", "storage", "adapter", "codeBase", result3);
+		UnitTestResult result4 = new UnitTestResult("r04", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest4 = new UnitTest("test4", "unitTest", "storage", "adapter", "codeBase", result4);
+		UnitTestResult result5 = new UnitTestResult("r05", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest5 = new UnitTest("test5", "unitTest", "storage", "adapter", "codeBase", result5);
+		UnitTestResult result6 = new UnitTestResult("r06", "computer", "row", "00:00:01",
+				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
+				"type", "");
+		UnitTest unitTest6 = new UnitTest("test6", "unitTest", "storage", "adapter", "codeBase", result6);
 		List<UnitTest> testList1 = new LinkedList<>();
 		List<UnitTest> testList2 = new LinkedList<>();
 		testList1.add(unitTest1);
@@ -48,7 +66,11 @@ public class TestRunTests {
 
 	@Before
 	public void initializeTests() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632+01:00", Outcome.FAILED, classList, 6, 6, 3, 3);
+		setting = new TestRunSetting("trs1", "Setting", "rundepl", false, "userdepl", "agentRuleName");
+		result = new TestRunResult(Outcome.FAILED, 0, 0, 0, 0, 6, 3, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test
@@ -58,21 +80,21 @@ public class TestRunTests {
 
 	@Test
 	public void setsCorrectDateSuccessfully() {
-		String dateAsString = "2015-11-26T13:38:43.707194632+01:00";
-		Instant instant = Instant.parse(dateAsString.substring(0, dateAsString.length() - 6) + "Z");
-		LocalDateTime date = LocalDateTime.ofInstant(instant,
-				ZoneOffset.of((dateAsString.substring(dateAsString.length() - 6, dateAsString.length()))));
+		String dateAsString = "2015-11-26T11:38:43.707194632+01:00";
+		ZonedDateTime date = ZonedDateTime.parse(dateAsString);
 		assertEquals(date, testRun.getCreationDate());
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void wrongDateFormatIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632", Outcome.FAILED, classList, 6, 6, 3, 3);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test
 	public void setsOutcomeSuccessfully() {
-		assertEquals(Outcome.FAILED, testRun.getOutcome());
+		assertEquals(Outcome.FAILED, testRun.getResult().getOutcome());
 	}
 
 	@Test
@@ -91,46 +113,62 @@ public class TestRunTests {
 	}
 
 	@Test
-	public void setsCounterSuccessfully() {
-		assertEquals(6, testRun.getCounter().getTotalTests());
-		assertEquals(6, testRun.getCounter().getExecutedTests());
-		assertEquals(3, testRun.getCounter().getPassedTests());
-		assertEquals(3, testRun.getCounter().getFailedTests());
+	public void setsResultSuccessfully() {
+		assertEquals(6, testRun.getResult().getTotal());
+		assertEquals(6, testRun.getResult().getExecuted());
+		assertEquals(3, testRun.getResult().getPassed());
+		assertEquals(3, testRun.getResult().getFailed());
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void emptyIdIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("", "2015-11-26T13:38:43.707194632", Outcome.FAILED, classList, 6, 6, 3, 3);
+		testRun = new TestRun("xmlns", "", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void nullAsIdIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun(null, "2015-11-26T13:38:43.707194632", Outcome.FAILED, classList, 6, 6, 3, 3);
+		testRun = new TestRun("xmlns", null, "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void nullAsOutcomeIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632", null, classList, 6, 6, 3, 3);
+		result = new TestRunResult(null, 0, 0, 0, 0, 6, 3, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void emptyClassListIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632+01:00", Outcome.FAILED, new LinkedList<>(), 6, 6, 3,
-				3);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", new LinkedList<>(), setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void nullAsClassListIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632+01:00", Outcome.FAILED, null, 6, 6, 3, 3);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", null, setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void zeroAsTotalTestsIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632", Outcome.FAILED, classList, 0, 6, 3, 3);
+		result = new TestRunResult(Outcome.FAILED, 0, 0, 0, 0, 6, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 
 	@Test(expected = TdaDataModelException.class)
 	public void negativeNumberAsCounterIsNotAccepted() throws TdaDataModelException {
-		testRun = new TestRun("TR1", "2015-11-26T13:38:43.707194632", Outcome.FAILED, classList, 6, -1, 3, 3);
+		result = new TestRunResult(Outcome.FAILED, 0, 0, 0, 0, 6, 3, -1, 0, 0, 0, 3, 0, 0, 0, 6, 0);
+		testRun = new TestRun("xmlns", "TR1", "testRun1", "Fred", "2015-11-26T11:38:43.707194632+01:00",
+				"2015-11-26T13:38:43.707194632+01:00", "2015-11-26T13:38:40.707194632+01:00",
+				"2015-11-26T13:38:42.707194632+01:00", classList, setting, result);
 	}
 }

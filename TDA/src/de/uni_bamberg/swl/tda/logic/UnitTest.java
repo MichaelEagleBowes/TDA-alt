@@ -11,45 +11,40 @@ public class UnitTest {
 
 	private final String id;
 	private final String name;
-	private final Outcome outcome;
+	private final String storage;
+	private final String adapterTypeName;
+	private final String codeBase;
+	private final UnitTestResult result;
 
 	/**
-	 * Creates a new executed {@code UnitTest}.
 	 * 
 	 * @param id
 	 *            the {@code UnitTest}'s ID. Mustn't be null or empty.
 	 * @param name
 	 *            the {@code UnitTest}'s name. Mustn't be null or empty.
-	 * @param outcome
-	 *            the {@code UnitTest}'s outcome. Mustn't be null.
+	 * @param storage
+	 *            the {@code UnitTest}'s storage. Mustn't be null or empty.
+	 * @param adapterTypeName
+	 *            the {@code UnitTest}'s adaptertype name. Mustn't be null or
+	 *            empty.
+	 * @param codeBase
+	 *            the {@code UnitTest}'s code base. Mustn't be null or empty.
+	 * @param result
+	 *            the {@code UnitTest}'s result. Mustn't be null.
 	 * @throws TdaDataModelException
-	 *             if any of the arguments is not valid.
-	 */
-	public UnitTest(String id, String name, Outcome outcome) throws TdaDataModelException {
-		super();
-		Validator.validateUnitTest(id, name);
-		this.id = id;
-		this.name = name;
-		this.outcome = outcome;
-	}
-
-	/**
-	 * Creates a new unexecuted {@code UnitTest}. The outcome is set on
-	 * {@code null}.
+	 *             if any of the parameters is not valid.
 	 * 
-	 * @param id
-	 *            the {@code UnitTest}'s ID. Mustn't be null or empty.
-	 * @param name
-	 *            the {@code UnitTest}'s name. Mustn't be null or empty.
-	 * @throws TdaDataModelException
-	 *             if any of the arguments is not valid.
 	 */
-	public UnitTest(String id, String name) throws TdaDataModelException {
+	public UnitTest(String id, String name, String storage, String adapterTypeName, String codeBase,
+			UnitTestResult result) throws TdaDataModelException {
 		super();
-		Validator.validateUnitTest(id, name);
+		Validator.validateUnitTest(id, name, storage, adapterTypeName, codeBase, result);
 		this.id = id;
 		this.name = name;
-		this.outcome = null;
+		this.storage = storage;
+		this.adapterTypeName = adapterTypeName;
+		this.codeBase = codeBase;
+		this.result = result;
 	}
 
 	/**
@@ -71,11 +66,38 @@ public class UnitTest {
 	}
 
 	/**
-	 * Getter for the {@code UnitTest}'s {@link Outcome}.
+	 * Getter for the {@code UnitTest}'s storage.
 	 * 
-	 * @return the {@code UnitTest}'s {@link Outcome}.
+	 * @return the {@code UnitTest}'s storage.
 	 */
-	public Outcome getOutcome() {
-		return outcome;
+	public String getStorage() {
+		return storage;
+	}
+
+	/**
+	 * Getter for the {@code UnitTest}'s adaptertype name.
+	 * 
+	 * @return the {@code UnitTest}'s adaptertype name.
+	 */
+	public String getAdapterTypeName() {
+		return adapterTypeName;
+	}
+
+	/**
+	 * Getter for the {@code UnitTest}'s code base.
+	 * 
+	 * @return the {@code UnitTest}'s code base.
+	 */
+	public String getCodeBase() {
+		return codeBase;
+	}
+
+	/**
+	 * Getter for the {@code UnitTest}'s result.
+	 * 
+	 * @return the {@code UnitTest}'s result.
+	 */
+	public UnitTestResult getResult() {
+		return result;
 	}
 }

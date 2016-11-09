@@ -1,10 +1,7 @@
 package de.uni_bamberg.swl.tda.logic;
 
 import java.time.DateTimeException;
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
-import java.util.Date;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 /**
@@ -16,71 +13,73 @@ import java.util.List;
 
 public class TestRun {
 
+	private final String xmlns;
 	private final String id;
-	private final LocalDateTime creationDate;
-	private final Outcome outcome;
+	private final String name;
+	private final String runUser;
+	private final ZonedDateTime creationDate;
+	private final ZonedDateTime finishDate;
+	private final ZonedDateTime queuingDate;
+	private final ZonedDateTime startDate;
 	private final List<TestedClass> classList;
-	private final TestOutcomeCounter counter;
+	private final TestRunSetting setting;
+	private final TestRunResult result;
 
 	/**
 	 * Creates a new {@code TestRun}.
 	 * 
+	 * @param xmlns
+	 *            the {@code TestRun}'s namespace. Mustn't be null or empty.
 	 * @param id
 	 *            the {@code TestRun}'s ID. Mustn't be null or empty.
+	 * @param name
+	 *            the {@code TestRun}'s name. Mustn't be null or empty.
+	 * @param runUser
+	 *            the {@code TestRun}'s run user. Mustn't be null or empty.
 	 * @param creationDate
 	 *            the {@code TestRun}'s creation date in the form
 	 *            "2016-09-21T13:37:43.7071946+02:00".
-	 * @param outcome
-	 *            the {@code TestRun}'s outcome. Mustn't be null.
+	 * @param finishDate
+	 *            the {@code TestRun}'s finish date in the form
+	 *            "2016-09-21T13:37:43.7071946+02:00".
+	 * @param queuingDate
+	 *            the {@code TestRun}'s queuing date in the form
+	 *            "2016-09-21T13:37:43.7071946+02:00".
+	 * @param startDate
+	 *            the {@code TestRun}'s start date in the form
+	 *            "2016-09-21T13:37:43.7071946+02:00".
 	 * @param classList
 	 *            the {@code TestRun}'s list of tested classes. Mustn't be null
 	 *            or empty.
-	 * @param totalTests
-	 *            the {@code TestRun}'s number of total tests. Mustn't be below
-	 *            one.
-	 * @param executedTests
-	 *            the {@code TestRun}'s number of executed tests. Mustn't be
-	 *            below zero.
-	 * @param passedTests
-	 *            the {@code TestRun}'s number of passed tests. Mustn't be below
-	 *            zero.
-	 * @param failedTests
-	 *            the {@code TestRun}'s number of failed tests. Mustn't be below
-	 *            zero.
+	 * @param setting
+	 *            the {@code TestRun}'s setting. Mustn't be null.
+	 * @param result
+	 *            the {@code TestRun}'s result. Mustn't be null.
 	 * @throws TdaDataModelException
-	 *             if any of the arguments is not valid.
+	 *             if any of the pararmeters is not valid.
 	 */
-	public TestRun(String id, String creationDate, Outcome outcome, List<TestedClass> classList, int totalTests,
-			int executedTests, int passedTests, int failedTests) throws TdaDataModelException {
+	public TestRun(String xmlns, String id, String name, String runUser, String creationDate, String finishDate,
+			String queuingDate, String startDate, List<TestedClass> classList, TestRunSetting setting,
+			TestRunResult result) throws TdaDataModelException {
 		super();
-		Validator.validateTestRun(id, creationDate, outcome, classList);
+		Validator.validateTestRun(xmlns, id, name, runUser, creationDate, finishDate, queuingDate, startDate, classList,
+				setting, result);
+		this.xmlns = xmlns;
 		this.id = id;
-		this.creationDate = stringToDate(creationDate);
-		this.outcome = outcome;
-		this.classList = classList;
-		this.counter = new TestOutcomeCounter(totalTests, executedTests, passedTests, failedTests);
-	}
-
-	/**
-	 * Parses a {@link String} in form of "2016-09-21T13:37:43.7071946+02:00" to
-	 * a {@link Date}.
-	 * 
-	 * @param dateAsString
-	 *            the date as {@link String}.
-	 * @return the date as {@link LocalDateTime}.
-	 * @throws TdaDataModelException
-	 *             if a problem occurs while parsing the date.
-	 */
-	private LocalDateTime stringToDate(String dateAsString) throws TdaDataModelException {
+		this.name = name;
+		this.runUser = runUser;
 		try {
-			Instant instant = Instant.parse(dateAsString.substring(0, dateAsString.length() - 6) + "Z");
-			LocalDateTime date = LocalDateTime.ofInstant(instant,
-					ZoneOffset.of((dateAsString.substring(dateAsString.length() - 6, dateAsString.length()))));
-			return date;
+			this.creationDate = ZonedDateTime.parse(creationDate);
+			this.finishDate = ZonedDateTime.parse(finishDate);
+			this.queuingDate = ZonedDateTime.parse(queuingDate);
+			this.startDate = ZonedDateTime.parse(startDate);
 		} catch (DateTimeException e) {
 			throw new TdaDataModelException(
-					"A problem occurred while parsing the date. Please check the format of the string.", e);
+					"A problem occurred while parsing a date. Please check the format of the dates.", e);
 		}
+		this.classList = classList;
+		this.setting = setting;
+		this.result = result;
 	}
 
 	/**
@@ -97,18 +96,8 @@ public class TestRun {
 	 * 
 	 * @return the {@code TestRun}'s creation date.
 	 */
-	public LocalDateTime getCreationDate() {
+	public ZonedDateTime getCreationDate() {
 		return creationDate;
-	}
-
-	/**
-	 * Getter for the {@code TestRun}'s overall outcome.
-	 * 
-	 * @return {@code true} if no {@link UnitTest} failed, otherwise
-	 *         {@code false}.
-	 */
-	public Outcome getOutcome() {
-		return outcome;
 	}
 
 	/**
@@ -140,12 +129,74 @@ public class TestRun {
 	}
 
 	/**
-	 * Getter for the {@code TestRun}'s counter, which counts the quantity of
-	 * the different {@link Outcome}s of all {@link UnitTest}s.
+	 * Getter for the {@code TestRun}'s result.
 	 * 
-	 * @return the {@code TestRun}'s counter.
+	 * @return the {@code TestRun}'s result.
 	 */
-	public TestOutcomeCounter getCounter() {
-		return counter;
+	public TestRunResult getResult() {
+		return result;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s xmlns.
+	 * 
+	 * @return the {@code TestRun}'s xmlns.
+	 */
+	public String getXmlns() {
+		return xmlns;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s name.
+	 * 
+	 * @return the {@code TestRun}'s name.
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s run user.
+	 * 
+	 * @return the {@code TestRun}'s run user.
+	 */
+	public String getRunUser() {
+		return runUser;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s finish date.
+	 * 
+	 * @return the {@code TestRun}'s finish date.
+	 */
+	public ZonedDateTime getFinishDate() {
+		return finishDate;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s queuing date.
+	 * 
+	 * @return the {@code TestRun}'s queuing date.
+	 */
+	public ZonedDateTime getQueuingDate() {
+		return queuingDate;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s start date.
+	 * 
+	 * @return the {@code TestRun}'s start date.
+	 */
+	public ZonedDateTime getStartDate() {
+		return startDate;
+	}
+
+	/**
+	 * Getter for the {@code TestRun}'s setting.
+	 * 
+	 * @return the {@code TestRun}'s setting.
+	 */
+	public TestRunSetting getSetting() {
+		return setting;
 	}
 }

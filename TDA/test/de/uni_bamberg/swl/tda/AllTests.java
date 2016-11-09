@@ -7,7 +7,6 @@ import org.junit.runners.Suite.SuiteClasses;
 import de.uni_bamberg.swl.tda.logic.TestRunTests;
 import de.uni_bamberg.swl.tda.logic.TestedClassTests;
 import de.uni_bamberg.swl.tda.logic.UnitTestTests;
-import de.uni_bamberg.swl.tda.logic.parser.XMLUtilitiesTest;
 
 /**
  * Test suite for all tests.
@@ -17,13 +16,7 @@ import de.uni_bamberg.swl.tda.logic.parser.XMLUtilitiesTest;
  */
 
 @RunWith(Suite.class)
-@SuiteClasses({
-        // logic model
-        UnitTestTests.class, TestedClassTests.class, TestRunTests.class,
-
-        // logic parser
-        XMLUtilitiesTest.class,
-})
+@SuiteClasses({ UnitTestTests.class, TestedClassTests.class, TestRunTests.class })
 public class AllTests {
 
 }
