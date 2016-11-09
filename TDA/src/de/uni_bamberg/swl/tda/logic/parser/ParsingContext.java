@@ -1,5 +1,6 @@
 package de.uni_bamberg.swl.tda.logic.parser;
 
+import de.uni_bamberg.swl.tda.logic.TdaDataModelException;
 import de.uni_bamberg.swl.tda.logic.TestRun;
 
 import javax.xml.stream.events.XMLEvent;
@@ -37,6 +38,8 @@ interface ParsingContext {
      * @return the parsed {@link TestRun}
      * @throws IllegalStateException Signals that the parser is currently not in a state to return
      *                               any useful result.
+     * @throws TdaDataModelException Signals that the parser was able to parse the XML but the
+     *                               contained data is invalid.
      */
-    TestRun getResult() throws IllegalStateException;
+    TestRun getResult() throws IllegalStateException, TdaDataModelException;
 }
