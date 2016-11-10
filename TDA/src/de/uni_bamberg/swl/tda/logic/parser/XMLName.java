@@ -13,7 +13,7 @@ class XMLName {
         public static final String TEST_SETTINGS = "TestSettings";
         // Children of <TestSettings>
         public static final String DEPLOYMENT = "Deployment";
-        public static final String EXECUTION = "Execution";
+        public static final String EXECUTION = "Execution"; // ALSO Child of <TestDefinitions>
         public static final String TEST_TYPE_SPECIFIC = "TestTypeSpecific"; // Child of <Execution>
         public static final String AGENT_RULE = "AgentRule"; // Child of <Execution>
         public static final String PROPERTIES = "Properties";
@@ -29,7 +29,6 @@ class XMLName {
         public static final String TEST_DEFINITIONS = "TestDefinitions";
         // Children of <TestDefinitions>
         public static final String UNIT_TEST = "UnitTest";
-        public static final String EXECUTION = "Execution";
         public static final String TEST_METHOD = "TestMethod";
         
         public static final String TEST_LISTS = "TestLists";
@@ -83,13 +82,13 @@ class XMLName {
         public static final String WARNING = "warning";
         //TestDefinitions
         public static final String STORAGE = "storage";
-        public static final String ADAPTER_TYPE_NAME"adapterTypeName";
+        public static final String ADAPTER_TYPE_NAME = "adapterTypeName";
         public static final String CLASS_NAME = "className";
         public static final String CODE_BASE = "codeBase";
         //TestLists
         //TestEntries
-        public static final String EXECUTION_ID = "executionId";
-        public static final String TEST_ID = "testId";
+        public static final String EXECUTION_ID = "executionId"; // ALSO Child of <Results>
+        public static final String TEST_ID = "testId"; // ALSO Child of <Results>
         public static final String TEST_LISTID = "testListId";
         //Results
         public static final String OUTCOME = "outcome";
@@ -97,10 +96,8 @@ class XMLName {
         public static final String DATA_ROW_INFO = "dataRowInfo";
         public static final String DURATION = "duration";
         public static final String END_TIME = "endTime";
-        public static final String EXECUTION_ID = "executionId";
         public static final String RELATIVE_RESULTS_DIRECTORY = "relativeResultsDirectory";
         public static final String START_TIME = "startTime";
-        public static final String TEST_ID = "testId";
         public static final String TEST_LIST_ID = "testListId";
         public static final String TEST_NAME = "testName";
         public static final String TEST_TYPE = "testType";
