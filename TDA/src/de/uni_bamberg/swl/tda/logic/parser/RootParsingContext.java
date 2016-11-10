@@ -59,7 +59,7 @@ class RootParsingContext extends ParsingContextBase {
 
         // <TestLists>
         if (XMLName.Element.TEST_LISTS.equals(startElement.getName().getLocalPart())) {
-            TestListsContext context = new TestListsContext(this, builder);
+            TestListsContext context = new TestListsContext(this);
             context.handleStartElement(startElement);
             return context;
         }
