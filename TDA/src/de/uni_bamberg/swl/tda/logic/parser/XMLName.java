@@ -3,7 +3,7 @@ package de.uni_bamberg.swl.tda.logic.parser;
 /**
  * Provides constants for the names of elements and attributes used in the XML schema.
  *
- * @author Florian Beetz
+ * @author Florian Beetz AND Michael Bowes
  */
 class XMLName {
 
