@@ -20,7 +20,8 @@ public class UnitTestResultBuilder {
 	private String relativeResultsDirectory;
 	private String testListId;
 	private String testType;
-	private String output;
+	private String stdOut;
+	private String errorInfo;
 
 	/**
 	 * Creates a new {@code UnitTestResultBuilder}.
@@ -141,13 +142,25 @@ public class UnitTestResultBuilder {
 	}
 
 	/**
-	 * Sets the {@code UnitTestResultBuilder}'s output.
+	 * Sets the {@code UnitTestResultBuilder}'s output on the standard output.
 	 * 
 	 * @param output
-	 *            the {@code UnitTestResultBuilder}'s output. Musnt't be null.
+	 *            the {@code UnitTestResultBuilder}'s output on the standard
+	 *            output. Musnt't be null.
 	 */
-	public void setOutput(String output) {
-		this.output = output;
+	public void setStdOut(String stdOut) {
+		this.stdOut = stdOut;
+	}
+
+	/**
+	 * Sets the {@code UnitTestResultBuilder}'s output on the error output.
+	 * 
+	 * @param output
+	 *            the {@code UnitTestResultBuilder}'s output on the error
+	 *            output. Musnt't be null.
+	 */
+	public void setErrorInfo(String errorInfo) {
+		this.errorInfo = errorInfo;
 	}
 
 	/**
@@ -159,6 +172,6 @@ public class UnitTestResultBuilder {
 	 */
 	public UnitTestResult create() throws TdaDataModelException {
 		return new UnitTestResult(executionId, computerName, dataRowInfo, duration, startTime, endTime, outcome,
-				relativeResultsDirectory, testListId, testType, output);
+				relativeResultsDirectory, testListId, testType, stdOut, errorInfo);
 	}
 }

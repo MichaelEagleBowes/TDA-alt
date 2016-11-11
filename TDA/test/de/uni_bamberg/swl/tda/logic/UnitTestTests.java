@@ -20,7 +20,7 @@ public class UnitTestTests {
 	@Before
 	public void initializeTests() throws TdaDataModelException {
 		result = new UnitTestResult("r01", "computer", "row", "00:00:01", "2016-09-21T13:37:43.7071946+02:00",
-				"2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId", "type", "");
+				"2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId", "type", "", "");
 		unitTest = new UnitTest("abcd1234", "unitTest", "storage", "adapter", "codeBase", result);
 	}
 
@@ -52,7 +52,7 @@ public class UnitTestTests {
 	@Test(expected = TdaDataModelException.class)
 	public void invalidResultIsNotAccepted() throws TdaDataModelException {
 		result = new UnitTestResult("r01", "computer", "row", "00:00:01", "2016-09-21T13:37:43.7071946",
-				"2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId", "type", "");
+				"2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId", "type", "", "");
 		unitTest = new UnitTest("abcd1234", "unitTest", "storage", "adapter", "codeBase", result);
 	}
 

@@ -25,15 +25,15 @@ public class TestedClassTests {
 	public static void initializeTestClass() throws TdaDataModelException {
 		UnitTestResult result1 = new UnitTestResult("r01", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest1 = new UnitTest("test1", "unitTest", "storage", "adapter", "codeBase", result1);
 		UnitTestResult result2 = new UnitTestResult("r02", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest2 = new UnitTest("test2", "unitTest", "storage", "adapter", "codeBase", result2);
 		UnitTestResult result3 = new UnitTestResult("r03", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest3 = new UnitTest("test3", "unitTest", "storage", "adapter", "codeBase", result3);
 		testList.add(unitTest1);
 		testList.add(unitTest2);

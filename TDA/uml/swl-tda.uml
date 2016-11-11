@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_la_7sKaiEeaSFpwf8uLyjA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_lbAiwKaiEeaSFpwf8uLyjA" source="codegen">
         <details xmi:id="_lbAiwaaiEeaSFpwf8uLyjA" key="codegenDirectory" value="/swl-tda/src"/>
-        <details xmi:id="_mgFUcKaiEeaSFpwf8uLyjA" key="AssociatedSourceCode" value="/swl-tda/src/de/uni_bamberg/swl/tda/logic/Outcome.java;3102757580/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TdaDataModelException.java;1934098782/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTest.java;1686251867/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestedClassBuilder.java;3577056614/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestedClass.java;3327366857/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunSettingBuilder.java;2326772294/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunSetting.java;121436682/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunResultBuilder.java;1873711098/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunResult.java;1324364127/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunBuilder.java;3775279918/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRun.java;1484577753/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestBuilder.java;1830660365/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestResult.java;1561821000/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestResultBuilder.java;2326127439/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/Validator.java;1858136988/1;"/>
+        <details xmi:id="_mgFUcKaiEeaSFpwf8uLyjA" key="AssociatedSourceCode" value="/swl-tda/src/de/uni_bamberg/swl/tda/logic/Outcome.java;3102757580/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TdaDataModelException.java;1934098782/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTest.java;1686251867/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestedClassBuilder.java;3577056614/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestedClass.java;3327366857/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunSettingBuilder.java;2326772294/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunSetting.java;121436682/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunResultBuilder.java;1873711098/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunResult.java;1324364127/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRunBuilder.java;3775279918/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/TestRun.java;1484577753/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestBuilder.java;1830660365/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestResult.java;338181034/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/UnitTestResultBuilder.java;4130579590/1;/swl-tda/src/de/uni_bamberg/swl/tda/logic/Validator.java;3708244131/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_mSb6AKaiEeaSFpwf8uLyjA">
@@ -2282,46 +2282,54 @@ step.
                 <ownedAttribute xmi:id="_mYXi4aaiEeaSFpwf8uLyjA" name="testType" visibility="private" isLeaf="true" isReadOnly="true">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
-                <ownedAttribute xmi:id="_mYXi46aiEeaSFpwf8uLyjA" name="output" visibility="private" isLeaf="true" isReadOnly="true">
+                <ownedAttribute xmi:id="_mYXi46aiEeaSFpwf8uLyjA" name="stdOut" visibility="private" isLeaf="true" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_I1FmgKfnEeaB4aP_Qdm-IA" name="errorInfo" visibility="private" isLeaf="true" isReadOnly="true">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3cKaiEeaSFpwf8uLyjA" name="UnitTestResult" specification="_mWy1kKaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZN3caaiEeaSFpwf8uLyjA" name="executionId">
+                  <ownedParameter xmi:id="_Qbc68KfnEeaB4aP_Qdm-IA" name="executionId">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3cqaiEeaSFpwf8uLyjA" name="computerName">
+                  <ownedParameter xmi:id="_Qbc68afnEeaB4aP_Qdm-IA" name="computerName">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3c6aiEeaSFpwf8uLyjA" name="dataRowInfo">
+                  <ownedParameter xmi:id="_Qbc68qfnEeaB4aP_Qdm-IA" name="dataRowInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3dKaiEeaSFpwf8uLyjA" name="duration">
+                  <ownedParameter xmi:id="_Qbc686fnEeaB4aP_Qdm-IA" name="duration">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3daaiEeaSFpwf8uLyjA" name="startTime">
+                  <ownedParameter xmi:id="_Qbc69KfnEeaB4aP_Qdm-IA" name="startTime">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3dqaiEeaSFpwf8uLyjA" name="endTime">
+                  <ownedParameter xmi:id="_QbdiAKfnEeaB4aP_Qdm-IA" name="endTime">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3d6aiEeaSFpwf8uLyjA" name="outcome" type="_mSXokKaiEeaSFpwf8uLyjA"/>
-                  <ownedParameter xmi:id="_mZN3eKaiEeaSFpwf8uLyjA" name="relativeResultsDirectory">
+                  <ownedParameter xmi:id="_QbdiAafnEeaB4aP_Qdm-IA" name="outcome" type="_mSXokKaiEeaSFpwf8uLyjA"/>
+                  <ownedParameter xmi:id="_QbdiAqfnEeaB4aP_Qdm-IA" name="relativeResultsDirectory">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3eaaiEeaSFpwf8uLyjA" name="testListId">
+                  <ownedParameter xmi:id="_QbdiA6fnEeaB4aP_Qdm-IA" name="testListId">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3eqaiEeaSFpwf8uLyjA" name="testType">
+                  <ownedParameter xmi:id="_QbdiBKfnEeaB4aP_Qdm-IA" name="testType">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3e6aiEeaSFpwf8uLyjA" name="output">
+                  <ownedParameter xmi:id="_QbdiBafnEeaB4aP_Qdm-IA" name="stdOut">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZN3fKaiEeaSFpwf8uLyjA" type="_mUP34KaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_QbdiBqfnEeaB4aP_Qdm-IA" type="_mUP34KaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_QbdiB6fnEeaB4aP_Qdm-IA" name="errorInfo">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>super();
 		Validator.validateUnitTestResult(executionId, computerName, dataRowInfo, duration, endTime, outcome,
-				relativeResultsDirectory, startTime, testListId, testType, output);
+				relativeResultsDirectory, startTime, testListId, testType, stdOut, errorInfo);
 		this.executionId = executionId;
 		this.computerName = computerName;
 		this.dataRowInfo = dataRowInfo;
@@ -2337,11 +2345,13 @@ step.
 		this.relativeResultsDirectory = relativeResultsDirectory;
 		this.testListId = testListId;
 		this.testType = testType;
-		this.output = output;
+		this.stdOut = stdOut;
+		this.errorInfo = errorInfo;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3faaiEeaSFpwf8uLyjA" name="getExecutionId" specification="_mUS7MKaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZN3fqaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
@@ -2350,6 +2360,7 @@ step.
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3f6aiEeaSFpwf8uLyjA" name="getDataRowInfo" specification="_mUTiQaaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZN3gKaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
@@ -2357,19 +2368,24 @@ step.
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3gaaiEeaSFpwf8uLyjA" name="getDuration" specification="_mUUJUKaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZN3gqaiEeaSFpwf8uLyjA" type="_mWxAYKaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_mZN3gqaiEeaSFpwf8uLyjA" type="_mWxAYKaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>return duration;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3g6aiEeaSFpwf8uLyjA" name="getOutcome" specification="_mUUJUaaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZN3hKaiEeaSFpwf8uLyjA" type="_mSXokKaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_mZN3hKaiEeaSFpwf8uLyjA" type="_mSXokKaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>return outcome;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3haaiEeaSFpwf8uLyjA" name="getRelativeResultsDirectory" specification="_mUUJUqaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZN3hqaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
@@ -2377,13 +2393,16 @@ step.
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZN3h6aiEeaSFpwf8uLyjA" name="getStartTime" specification="_mUUwYaaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZN3iKaiEeaSFpwf8uLyjA" type="_mWmBQaaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_mZN3iKaiEeaSFpwf8uLyjA" type="_mWmBQaaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>return startTime;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZOegKaiEeaSFpwf8uLyjA" name="getTestListId" specification="_mUUwYqaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZOegaaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
@@ -2392,18 +2411,29 @@ step.
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZOegqaiEeaSFpwf8uLyjA" name="getTestType" specification="_mUVXcKaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZOeg6aiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
                   <body>return testType;
 	</body>
                 </ownedBehavior>
-                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZOehKaiEeaSFpwf8uLyjA" name="getOutput" specification="_mUVXcqaiEeaSFpwf8uLyjA">
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZOehKaiEeaSFpwf8uLyjA" name="getErrorInfo" specification="_mUVXcqaiEeaSFpwf8uLyjA">
                   <ownedParameter xmi:id="_mZOehaaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
-                  <body>return output;
+                  <body>return errorInfo;
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_pACEAKfnEeaB4aP_Qdm-IA" name="getStdOut" specification="_o__AsKfnEeaB4aP_Qdm-IA">
+                  <ownedParameter xmi:id="_pACEAafnEeaB4aP_Qdm-IA" direction="return">
+                    <name xsi:nil="true"/>
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return stdOut;
 	</body>
                 </ownedBehavior>
                 <ownedOperation xmi:id="_mUS7MKaiEeaSFpwf8uLyjA" name="getExecutionId" method="_mZN3faaiEeaSFpwf8uLyjA">
@@ -2480,13 +2510,13 @@ step.
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
-                <ownedOperation xmi:id="_mUVXcqaiEeaSFpwf8uLyjA" name="getOutput" method="_mZOehKaiEeaSFpwf8uLyjA">
+                <ownedOperation xmi:id="_mUVXcqaiEeaSFpwf8uLyjA" name="getErrorInfo" method="_mZOehKaiEeaSFpwf8uLyjA">
                   <ownedComment xmi:id="_mZXoeaaiEeaSFpwf8uLyjA">
-                    <body>Getter for the {@code UnitTestResult}'s output.
+                    <body>Getter for the {@code UnitTestResult}'s output on the error ouptut.
 	 * 
-	 * @return the {@code UnitTestResult}'s output.</body>
+	 * @return the {@code UnitTestResult}'s output on the error output.</body>
                   </ownedComment>
-                  <ownedParameter xmi:id="_mUVXc6aiEeaSFpwf8uLyjA" direction="return">
+                  <ownedParameter xmi:id="_qNTIYKfnEeaB4aP_Qdm-IA" direction="return">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
@@ -2526,8 +2556,12 @@ step.
 	 * @param testType
 	 *            the {@code UnitTestResult}'s test type. Mustn't be empty or
 	 *            null.
-	 * @param output
-	 *            the {@code UnitTestResult}'s output. Musnt't be null.
+	 * @param stdOut
+	 *            the {@code UnitTestResult}'s output on the standard output.
+	 *            Musnt't be null.
+	 * @param errorInfo
+	 *            the {@code UnitTestResult}'s output on the error output.
+	 *            Musnt't be null.
 	 * @throws TdaDataModelException
 	 *             if any of the parameters is not valid.</body>
                   </ownedComment>
@@ -2559,10 +2593,23 @@ step.
                   <ownedParameter xmi:id="_mWzco6aiEeaSFpwf8uLyjA" name="testType">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mWzcpKaiEeaSFpwf8uLyjA" name="output">
+                  <ownedParameter xmi:id="_mWzcpKaiEeaSFpwf8uLyjA" name="stdOut">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <ownedParameter xmi:id="_mWzcp6aiEeaSFpwf8uLyjA" type="_mUP34KaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_QbbFwKfnEeaB4aP_Qdm-IA" name="errorInfo">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_o__AsKfnEeaB4aP_Qdm-IA" name="getStdOut" method="_pACEAKfnEeaB4aP_Qdm-IA">
+                  <ownedComment xmi:id="_pACEAqfnEeaB4aP_Qdm-IA">
+                    <body>Getter for the {@code UnitTestResult}'s output on the standard output.
+	 * 
+	 * @return the {@code UnitTestResult}'s output on the standard output.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_pAA14KfnEeaB4aP_Qdm-IA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
                 </ownedOperation>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_mUZo4KaiEeaSFpwf8uLyjA" name="UnitTestResultBuilder">
@@ -2601,11 +2648,16 @@ step.
                 <ownedAttribute xmi:id="_mY4gQ6aiEeaSFpwf8uLyjA" name="testType" visibility="private">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
-                <ownedAttribute xmi:id="_mY5HUaaiEeaSFpwf8uLyjA" name="output" visibility="private">
+                <ownedAttribute xmi:id="_mY5HUaaiEeaSFpwf8uLyjA" name="stdOut" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_FdgKMKfoEeaB4aP_Qdm-IA" name="errorInfo" visibility="private">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedAttribute>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZOehqaiEeaSFpwf8uLyjA" name="UnitTestResultBuilder" specification="_mUcFIKaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZOeh6aiEeaSFpwf8uLyjA" type="_mUZo4KaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_mZOeh6aiEeaSFpwf8uLyjA" type="_mUZo4KaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>super();
 	</body>
@@ -2688,19 +2740,29 @@ step.
                   <body>this.testType = testType;
 	</body>
                 </ownedBehavior>
-                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZQTsaaiEeaSFpwf8uLyjA" name="setOutput" specification="_mUgWkKaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZQTsqaiEeaSFpwf8uLyjA" name="output">
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZQTsaaiEeaSFpwf8uLyjA" name="setErrorInfo" specification="_mUgWkKaiEeaSFpwf8uLyjA">
+                  <ownedParameter xmi:id="_WZKaEKfoEeaB4aP_Qdm-IA" name="errorInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
-                  <body>this.output = output;
+                  <body>this.errorInfo = errorInfo;
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZQTs6aiEeaSFpwf8uLyjA" name="create" specification="_mUgWkqaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZQTtKaiEeaSFpwf8uLyjA" type="_mUP34KaiEeaSFpwf8uLyjA" direction="return"/>
+                  <ownedParameter xmi:id="_mZQTtKaiEeaSFpwf8uLyjA" type="_mUP34KaiEeaSFpwf8uLyjA" direction="return">
+                    <name xsi:nil="true"/>
+                  </ownedParameter>
                   <language>java</language>
                   <body>return new UnitTestResult(executionId, computerName, dataRowInfo, duration, startTime, endTime, outcome,
-				relativeResultsDirectory, testListId, testType, output);
+				relativeResultsDirectory, testListId, testType, stdOut, errorInfo);
+	</body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_J19YMKfoEeaB4aP_Qdm-IA" name="setStdOut" specification="_J18xIKfoEeaB4aP_Qdm-IA">
+                  <ownedParameter xmi:id="_J19YMafoEeaB4aP_Qdm-IA" name="stdOut">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.stdOut = stdOut;
 	</body>
                 </ownedBehavior>
                 <ownedOperation xmi:id="_mUcFIKaiEeaSFpwf8uLyjA" name="UnitTestResultBuilder" method="_mZOehqaiEeaSFpwf8uLyjA">
@@ -2822,14 +2884,15 @@ step.
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
-                <ownedOperation xmi:id="_mUgWkKaiEeaSFpwf8uLyjA" name="setOutput" method="_mZQTsaaiEeaSFpwf8uLyjA">
+                <ownedOperation xmi:id="_mUgWkKaiEeaSFpwf8uLyjA" name="setErrorInfo" method="_mZQTsaaiEeaSFpwf8uLyjA">
                   <ownedComment xmi:id="_mZYPhKaiEeaSFpwf8uLyjA">
-                    <body>Sets the {@code UnitTestResultBuilder}'s output.
+                    <body>Sets the {@code UnitTestResultBuilder}'s output on the error output.
 	 * 
 	 * @param output
-	 *            the {@code UnitTestResultBuilder}'s output. Musnt't be null.</body>
+	 *            the {@code UnitTestResultBuilder}'s output on the error
+	 *            output. Musnt't be null.</body>
                   </ownedComment>
-                  <ownedParameter xmi:id="_mUgWkaaiEeaSFpwf8uLyjA" name="output">
+                  <ownedParameter xmi:id="_mZQTsqaiEeaSFpwf8uLyjA" name="errorInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
@@ -2851,6 +2914,18 @@ step.
 	 *            the {@code UnitTestResultBuilder}'s outcome. Mustn't be null.</body>
                   </ownedComment>
                   <ownedParameter xmi:id="_mW3HAaaiEeaSFpwf8uLyjA" name="outcome" type="_mSXokKaiEeaSFpwf8uLyjA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_J18xIKfoEeaB4aP_Qdm-IA" name="setStdOut" method="_J19YMKfoEeaB4aP_Qdm-IA">
+                  <ownedComment xmi:id="_J19_QKfoEeaB4aP_Qdm-IA">
+                    <body>Sets the {@code UnitTestResultBuilder}'s output on the standard output.
+	 * 
+	 * @param output
+	 *            the {@code UnitTestResultBuilder}'s output on the standard
+	 *            output. Musnt't be null.</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_J18xIafoEeaB4aP_Qdm-IA" name="stdOut">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
                 </ownedOperation>
               </packagedElement>
               <packagedElement xmi:type="uml:Class" xmi:id="_mUjZ4KaiEeaSFpwf8uLyjA" name="Validator" visibility="package">
@@ -2888,41 +2963,44 @@ step.
 	</body>
                 </ownedBehavior>
                 <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mZQ6x6aiEeaSFpwf8uLyjA" name="validateUnitTestResult" specification="_mW5jQKaiEeaSFpwf8uLyjA">
-                  <ownedParameter xmi:id="_mZQ6yKaiEeaSFpwf8uLyjA" name="executionId">
+                  <ownedParameter xmi:id="_yT-UkKfnEeaB4aP_Qdm-IA" name="executionId">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6yaaiEeaSFpwf8uLyjA" name="computerName">
+                  <ownedParameter xmi:id="_yT-UkafnEeaB4aP_Qdm-IA" name="computerName">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6yqaiEeaSFpwf8uLyjA" name="dataRowInfo">
+                  <ownedParameter xmi:id="_yT-UkqfnEeaB4aP_Qdm-IA" name="dataRowInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6y6aiEeaSFpwf8uLyjA" name="duration">
+                  <ownedParameter xmi:id="_yT-Uk6fnEeaB4aP_Qdm-IA" name="duration">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6zKaiEeaSFpwf8uLyjA" name="endTime">
+                  <ownedParameter xmi:id="_yT-UlKfnEeaB4aP_Qdm-IA" name="endTime">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6zaaiEeaSFpwf8uLyjA" name="outcome" type="_mSXokKaiEeaSFpwf8uLyjA"/>
-                  <ownedParameter xmi:id="_mZQ6zqaiEeaSFpwf8uLyjA" name="relativeResultsDirectory">
+                  <ownedParameter xmi:id="_yT-UlafnEeaB4aP_Qdm-IA" name="outcome" type="_mSXokKaiEeaSFpwf8uLyjA"/>
+                  <ownedParameter xmi:id="_yT-UlqfnEeaB4aP_Qdm-IA" name="relativeResultsDirectory">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ6z6aiEeaSFpwf8uLyjA" name="startTime">
+                  <ownedParameter xmi:id="_yT-Ul6fnEeaB4aP_Qdm-IA" name="startTime">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ60KaiEeaSFpwf8uLyjA" name="testListId">
+                  <ownedParameter xmi:id="_yT-UmKfnEeaB4aP_Qdm-IA" name="testListId">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ60aaiEeaSFpwf8uLyjA" name="testType">
+                  <ownedParameter xmi:id="_yT-UmafnEeaB4aP_Qdm-IA" name="testType">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mZQ60qaiEeaSFpwf8uLyjA" name="output">
+                  <ownedParameter xmi:id="_yT-UmqfnEeaB4aP_Qdm-IA" name="stdOut">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_yT-Um6fnEeaB4aP_Qdm-IA" name="errorInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                   <language>java</language>
                   <body>if (executionId == null || computerName == null || dataRowInfo == null || duration == null || endTime == null
 				|| outcome == null || relativeResultsDirectory == null || startTime == null || testListId == null
-				|| testType == null || output == null) {
+				|| testType == null || stdOut == null || errorInfo == null) {
 			throw new TdaDataModelException(&quot;The parameters of an UnitTestResult mustn't be null.&quot;);
 		} else if (executionId.isEmpty() || computerName.isEmpty() || dataRowInfo.isEmpty()
 				|| relativeResultsDirectory.isEmpty() || testListId.isEmpty() || testType.isEmpty()) {
@@ -3139,7 +3217,10 @@ step.
                   <ownedParameter xmi:id="_mW6KWKaiEeaSFpwf8uLyjA" name="testType">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
-                  <ownedParameter xmi:id="_mW6KWaaiEeaSFpwf8uLyjA" name="output">
+                  <ownedParameter xmi:id="_mW6KWaaiEeaSFpwf8uLyjA" name="stdOut">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_yT8fYKfnEeaB4aP_Qdm-IA" name="errorInfo">
                     <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                   </ownedParameter>
                 </ownedOperation>
@@ -3756,6 +3837,7 @@ step.
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_mZNQYKaiEeaSFpwf8uLyjA" name="getComputerName" specification="_mYUfkKaiEeaSFpwf8uLyjA">
     <ownedParameter xmi:id="_mZNQYaaiEeaSFpwf8uLyjA" direction="return">
+      <name xsi:nil="true"/>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedParameter>
     <language>java</language>
@@ -3763,7 +3845,9 @@ step.
 	</body>
   </uml:OpaqueBehavior>
   <uml:OpaqueBehavior xmi:id="_mZNQYqaiEeaSFpwf8uLyjA" name="getEndTime" specification="_mYWUwKaiEeaSFpwf8uLyjA">
-    <ownedParameter xmi:id="_mZNQY6aiEeaSFpwf8uLyjA" type="_mWmBQaaiEeaSFpwf8uLyjA" direction="return"/>
+    <ownedParameter xmi:id="_mZNQY6aiEeaSFpwf8uLyjA" type="_mWmBQaaiEeaSFpwf8uLyjA" direction="return">
+      <name xsi:nil="true"/>
+    </ownedParameter>
     <language>java</language>
     <body>return endTime;
 	</body>
@@ -3785,4 +3869,6 @@ step.
   <UMLLabProfile:Reference xmi:id="_mZsYk6aiEeaSFpwf8uLyjA" base_Element="_mZsYkaaiEeaSFpwf8uLyjA"/>
   <UMLLabProfile:Reference xmi:id="_mZs_oqaiEeaSFpwf8uLyjA" base_Element="_mZs_oKaiEeaSFpwf8uLyjA"/>
   <UMLLabProfile:Reference xmi:id="_mZtmsKaiEeaSFpwf8uLyjA" base_Element="_mZs_o6aiEeaSFpwf8uLyjA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_I1GNkKfnEeaB4aP_Qdm-IA" base_Element="_I1FmgKfnEeaB4aP_Qdm-IA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_FdgxQKfoEeaB4aP_Qdm-IA" base_Element="_FdgKMKfoEeaB4aP_Qdm-IA"/>
 </xmi:XMI>

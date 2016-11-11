@@ -24,10 +24,10 @@ class Validator {
 
 	static void validateUnitTestResult(String executionId, String computerName, String dataRowInfo, String duration,
 			String endTime, Outcome outcome, String relativeResultsDirectory, String startTime, String testListId,
-			String testType, String output) throws TdaDataModelException {
+			String testType, String stdOut, String errorInfo) throws TdaDataModelException {
 		if (executionId == null || computerName == null || dataRowInfo == null || duration == null || endTime == null
 				|| outcome == null || relativeResultsDirectory == null || startTime == null || testListId == null
-				|| testType == null || output == null) {
+				|| testType == null || stdOut == null || errorInfo == null) {
 			throw new TdaDataModelException("The parameters of an UnitTestResult mustn't be null.");
 		} else if (executionId.isEmpty() || computerName.isEmpty() || dataRowInfo.isEmpty()
 				|| relativeResultsDirectory.isEmpty() || testListId.isEmpty() || testType.isEmpty()) {

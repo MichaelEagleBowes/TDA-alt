@@ -23,7 +23,8 @@ public class UnitTestResult {
 	private final String relativeResultsDirectory;
 	private final String testListId;
 	private final String testType;
-	private final String output;
+	private final String stdOut;
+	private final String errorInfo;
 
 	/**
 	 * Creates a new {@code UnitTestResult}.
@@ -57,17 +58,21 @@ public class UnitTestResult {
 	 * @param testType
 	 *            the {@code UnitTestResult}'s test type. Mustn't be empty or
 	 *            null.
-	 * @param output
-	 *            the {@code UnitTestResult}'s output. Musnt't be null.
+	 * @param stdOut
+	 *            the {@code UnitTestResult}'s output on the standard output.
+	 *            Musnt't be null.
+	 * @param errorInfo
+	 *            the {@code UnitTestResult}'s output on the error output.
+	 *            Musnt't be null.
 	 * @throws TdaDataModelException
 	 *             if any of the parameters is not valid.
 	 */
 	public UnitTestResult(String executionId, String computerName, String dataRowInfo, String duration,
 			String startTime, String endTime, Outcome outcome, String relativeResultsDirectory, String testListId,
-			String testType, String output) throws TdaDataModelException {
+			String testType, String stdOut, String errorInfo) throws TdaDataModelException {
 		super();
 		Validator.validateUnitTestResult(executionId, computerName, dataRowInfo, duration, endTime, outcome,
-				relativeResultsDirectory, startTime, testListId, testType, output);
+				relativeResultsDirectory, startTime, testListId, testType, stdOut, errorInfo);
 		this.executionId = executionId;
 		this.computerName = computerName;
 		this.dataRowInfo = dataRowInfo;
@@ -83,7 +88,8 @@ public class UnitTestResult {
 		this.relativeResultsDirectory = relativeResultsDirectory;
 		this.testListId = testListId;
 		this.testType = testType;
-		this.output = output;
+		this.stdOut = stdOut;
+		this.errorInfo = errorInfo;
 	}
 
 	/**
@@ -177,11 +183,20 @@ public class UnitTestResult {
 	}
 
 	/**
-	 * Getter for the {@code UnitTestResult}'s output.
+	 * Getter for the {@code UnitTestResult}'s output on the standard output.
 	 * 
-	 * @return the {@code UnitTestResult}'s output.
+	 * @return the {@code UnitTestResult}'s output on the standard output.
 	 */
-	public String getOutput() {
-		return output;
+	public String getStdOut() {
+		return stdOut;
+	}
+
+	/**
+	 * Getter for the {@code UnitTestResult}'s output on the error ouptut.
+	 * 
+	 * @return the {@code UnitTestResult}'s output on the error output.
+	 */
+	public String getErrorInfo() {
+		return errorInfo;
 	}
 }

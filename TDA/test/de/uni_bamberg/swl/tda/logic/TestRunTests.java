@@ -28,27 +28,27 @@ public class TestRunTests {
 	public static void initializeTestClass() throws TdaDataModelException {
 		UnitTestResult result1 = new UnitTestResult("r01", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest1 = new UnitTest("test1", "unitTest", "storage", "adapter", "codeBase", result1);
 		UnitTestResult result2 = new UnitTestResult("r02", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest2 = new UnitTest("test2", "unitTest", "storage", "adapter", "codeBase", result2);
 		UnitTestResult result3 = new UnitTestResult("r03", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest3 = new UnitTest("test3", "unitTest", "storage", "adapter", "codeBase", result3);
 		UnitTestResult result4 = new UnitTestResult("r04", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.PASSED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest4 = new UnitTest("test4", "unitTest", "storage", "adapter", "codeBase", result4);
 		UnitTestResult result5 = new UnitTestResult("r05", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest5 = new UnitTest("test5", "unitTest", "storage", "adapter", "codeBase", result5);
 		UnitTestResult result6 = new UnitTestResult("r06", "computer", "row", "00:00:01",
 				"2016-09-21T13:37:43.7071946+02:00", "2016-09-21T13:37:44.7071946+02:00", Outcome.FAILED, "dir", "tlId",
-				"type", "");
+				"type", "", "");
 		UnitTest unitTest6 = new UnitTest("test6", "unitTest", "storage", "adapter", "codeBase", result6);
 		List<UnitTest> testList1 = new LinkedList<>();
 		List<UnitTest> testList2 = new LinkedList<>();
